@@ -1,0 +1,79 @@
+menu_id,menu_name,sku,ingredient_name,qty_per_serving,unit,display_qty
+1,Thai Milk Tea (Cold),ING-001,Pasteurised Fresh Milk 2L,0.05,Bottle,100 ml
+1,Thai Milk Tea (Cold),ING-002,Thai Tea Leaf Mix,0.015,kg,15 g
+1,Thai Milk Tea (Cold),ING-009,Condensed Milk 1kg,0.02,kg,20 g
+1,Thai Milk Tea (Cold),ING-011,Ice Cubes,0.15,kg,150 g
+1,Thai Milk Tea (Cold),ING-032,Cup & Lid Set,1,Piece,1 set
+2,Espresso Latte (Hot/Iced),ING-005,Espresso Coffee Beans,0.018,kg,18 g
+2,Espresso Latte (Hot/Iced),ING-001,Pasteurised Fresh Milk 2L,0.075,Bottle,150 ml
+2,Espresso Latte (Hot/Iced),ING-008,Sugar Syrup 1L,0.01,Bottle,10 ml
+2,Espresso Latte (Hot/Iced),ING-011,Ice Cubes,0.15,kg,150 g
+2,Espresso Latte (Hot/Iced),ING-032,Cup & Lid Set,1,Piece,1 set
+3,Fresh Mango Cake Slice,ING-003,Ripe Nam Dok Mai Mangoes,0.15,kg,150 g
+3,Fresh Mango Cake Slice,ING-004,Heavy Whipping Cream 1L,0.08,Pack,80 ml
+3,Fresh Mango Cake Slice,ING-031,Sponge Cake Sheet,0.06,kg,60 g
+4,Iced Americano,ING-005,Espresso Coffee Beans,0.018,kg,18 g
+4,Iced Americano,ING-011,Ice Cubes,0.2,kg,200 g
+4,Iced Americano,ING-032,Cup & Lid Set,1,Piece,1 set
+5,Matcha Latte,ING-006,Matcha Powder,0.006,kg,6 g
+5,Matcha Latte,ING-001,Pasteurised Fresh Milk 2L,0.1,Bottle,200 ml
+5,Matcha Latte,ING-008,Sugar Syrup 1L,0.015,Bottle,15 ml
+5,Matcha Latte,ING-011,Ice Cubes,0.15,kg,150 g
+5,Matcha Latte,ING-032,Cup & Lid Set,1,Piece,1 set
+6,Hot Cocoa,ING-007,Cocoa Powder,0.02,kg,20 g
+6,Hot Cocoa,ING-001,Pasteurised Fresh Milk 2L,0.1,Bottle,200 ml
+6,Hot Cocoa,ING-008,Sugar Syrup 1L,0.01,Bottle,10 ml
+6,Hot Cocoa,ING-032,Cup & Lid Set,1,Piece,1 set
+7,Mango Smoothie,ING-003,Ripe Nam Dok Mai Mangoes,0.2,kg,200 g
+7,Mango Smoothie,ING-001,Pasteurised Fresh Milk 2L,0.03,Bottle,60 ml
+7,Mango Smoothie,ING-008,Sugar Syrup 1L,0.01,Bottle,10 ml
+7,Mango Smoothie,ING-011,Ice Cubes,0.2,kg,200 g
+7,Mango Smoothie,ING-032,Cup & Lid Set,1,Piece,1 set
+8,Lemon Soda,ING-010,Lemons,0.05,kg,50 g
+8,Lemon Soda,ING-012,Soda Water 1L,0.2,Bottle,200 ml
+8,Lemon Soda,ING-008,Sugar Syrup 1L,0.02,Bottle,20 ml
+8,Lemon Soda,ING-011,Ice Cubes,0.2,kg,200 g
+8,Lemon Soda,ING-032,Cup & Lid Set,1,Piece,1 set
+9,Spaghetti Carbonara,ING-013,Spaghetti Dry,0.12,kg,120 g
+9,Spaghetti Carbonara,ING-017,Bacon Slices,0.06,kg,60 g
+9,Spaghetti Carbonara,ING-020,Eggs,2,Piece,2 eggs
+9,Spaghetti Carbonara,ING-021,Parmesan Cheese,0.015,kg,15 g
+9,Spaghetti Carbonara,ING-004,Heavy Whipping Cream 1L,0.03,Pack,30 ml
+10,Spaghetti Tomato & Basil,ING-013,Spaghetti Dry,0.12,kg,120 g
+10,Spaghetti Tomato & Basil,ING-016,Tomato Sauce,0.15,kg,150 g
+10,Spaghetti Tomato & Basil,ING-024,Fresh Basil,0.01,kg,10 g
+10,Spaghetti Tomato & Basil,ING-023,Garlic,0.01,kg,10 g
+10,Spaghetti Tomato & Basil,ING-026,Olive Oil 1L,0.01,Bottle,10 ml
+10,Spaghetti Tomato & Basil,ING-021,Parmesan Cheese,0.008,kg,8 g
+11,Penne Arrabbiata,ING-014,Penne Dry,0.12,kg,120 g
+11,Penne Arrabbiata,ING-016,Tomato Sauce,0.15,kg,150 g
+11,Penne Arrabbiata,ING-027,Dried Chili Flakes,0.003,kg,3 g
+11,Penne Arrabbiata,ING-023,Garlic,0.012,kg,12 g
+11,Penne Arrabbiata,ING-026,Olive Oil 1L,0.01,Bottle,10 ml
+11,Penne Arrabbiata,ING-021,Parmesan Cheese,0.008,kg,8 g
+12,Creamy Mushroom Fettuccine,ING-015,Fettuccine Dry,0.12,kg,120 g
+12,Creamy Mushroom Fettuccine,ING-022,Button Mushrooms,0.08,kg,80 g
+12,Creamy Mushroom Fettuccine,ING-004,Heavy Whipping Cream 1L,0.08,Pack,80 ml
+12,Creamy Mushroom Fettuccine,ING-028,Butter,0.01,kg,10 g
+12,Creamy Mushroom Fettuccine,ING-023,Garlic,0.01,kg,10 g
+12,Creamy Mushroom Fettuccine,ING-021,Parmesan Cheese,0.01,kg,10 g
+13,Spaghetti Pad Kee Mao,ING-013,Spaghetti Dry,0.12,kg,120 g
+13,Spaghetti Pad Kee Mao,ING-018,Chicken Breast,0.1,kg,100 g
+13,Spaghetti Pad Kee Mao,ING-025,Holy Basil,0.02,kg,20 g
+13,Spaghetti Pad Kee Mao,ING-023,Garlic,0.015,kg,15 g
+13,Spaghetti Pad Kee Mao,ING-027,Dried Chili Flakes,0.004,kg,4 g
+13,Spaghetti Pad Kee Mao,ING-026,Olive Oil 1L,0.015,Bottle,15 ml
+14,Shrimp Aglio e Olio,ING-013,Spaghetti Dry,0.12,kg,120 g
+14,Shrimp Aglio e Olio,ING-019,Shrimp,0.1,kg,100 g
+14,Shrimp Aglio e Olio,ING-023,Garlic,0.02,kg,20 g
+14,Shrimp Aglio e Olio,ING-026,Olive Oil 1L,0.02,Bottle,20 ml
+14,Shrimp Aglio e Olio,ING-027,Dried Chili Flakes,0.003,kg,3 g
+14,Shrimp Aglio e Olio,ING-024,Fresh Basil,0.005,kg,5 g
+15,Chicken Pesto Penne,ING-014,Penne Dry,0.12,kg,120 g
+15,Chicken Pesto Penne,ING-018,Chicken Breast,0.1,kg,100 g
+15,Chicken Pesto Penne,ING-029,Pesto Sauce,0.03,kg,30 g
+15,Chicken Pesto Penne,ING-021,Parmesan Cheese,0.01,kg,10 g
+15,Chicken Pesto Penne,ING-026,Olive Oil 1L,0.01,Bottle,10 ml
+16,Garlic Bread,ING-030,Baguette (Garlic Bread),0.5,Piece,1/2 baguette
+16,Garlic Bread,ING-028,Butter,0.02,kg,20 g
+16,Garlic Bread,ING-023,Garlic,0.01,kg,10 g
