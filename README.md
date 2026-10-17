@@ -47,4 +47,4 @@ This application operates as a client-side Web Application and requires no serve
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/puifai-tt/wasteless.git](https://github.com/your-username/wasteless.git)
+   git clone https://github.com/puifai-tt/wasteless.git
