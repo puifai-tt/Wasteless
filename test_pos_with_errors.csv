@@ -1,0 +1,10 @@
+date,menu_id,menu_name,qty,unit_price,revenue
+2026-10-14,1,Thai Milk Tea (Cold),118,65,7670
+2026-10-14,9,Spaghetti Carbonara,21,159,3339
+14/10/2026,2,Espresso Latte (Hot/Iced),80,75,6000
+2026-10-14,4,Iced Americano,abc,60,0
+2026-10-14,99,Mystery Drink,5,50,250
+2026-10-14,7,Mango Smoothie,-3,89,-267
+2026-10-14,8,Lemon Soda,19,55,1200
+2569-10-15,1,Thai Milk Tea (Cold),120,65,7800
+2026-10-16,1,Thai Milk Tea (Cold),131,65,8515
