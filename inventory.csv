@@ -1,0 +1,33 @@
+sku,name,category,unit,in_stock,unit_cost,expiry,supplier,moq,min_stock,batch
+ING-001,Pasteurised Fresh Milk 2L,Dairy,Bottle,18,100,2026-10-18,CP Freshmart,10,13.9,Batch #20261016
+ING-002,Thai Tea Leaf Mix,Dry Goods,kg,12,320,2026-11-15,ChaTraMue Official,5,5.7,Batch #20260901
+ING-003,Ripe Nam Dok Mai Mangoes,Produce,kg,12.5,100,2026-10-19,Talat Thai Fruit,10,8.1,Batch #20261015
+ING-004,Heavy Whipping Cream 1L,Dairy,Pack,6,170,2026-10-19,CP Freshmart,6,4.2,Batch #20261014
+ING-005,Espresso Coffee Beans,Dry Goods,kg,14,650,2027-02-28,Northern Roast,5,7.2,Batch #20260915
+ING-006,Matcha Powder,Dry Goods,kg,2.4,1800,2027-03-31,Northern Roast,1,0.41,Batch #20260920
+ING-007,Cocoa Powder,Dry Goods,kg,5,420,2027-05-31,Northern Roast,2,0.78,Batch #20260820
+ING-008,Sugar Syrup 1L,Dry Goods,Bottle,20,65,2027-01-31,BakeCraft,6,6.0,Batch #20260930
+ING-009,Condensed Milk 1kg,Dairy,kg,8,95,2027-02-15,CP Freshmart,6,7.6,Batch #20260925
+ING-010,Lemons,Produce,kg,4,90,2026-10-24,Talat Thai Fruit,5,0.8,Batch #20261014
+ING-011,Ice Cubes,Frozen,kg,60,4.5,2026-12-31,CP Freshmart,50,157.5,Batch #20261016
+ING-012,Soda Water 1L,Beverages,Bottle,40,22,2027-04-30,CP Freshmart,12,12.6,Batch #20260910
+ING-013,Spaghetti Dry,Dry Goods,kg,38,62,2027-08-31,Siam Pasta Supply,10,25.2,Batch #20260905
+ING-014,Penne Dry,Dry Goods,kg,18,68,2027-08-31,Siam Pasta Supply,10,7.6,Batch #20260905
+ING-015,Fettuccine Dry,Dry Goods,kg,9,75,2027-07-31,Siam Pasta Supply,5,5.4,Batch #20260812
+ING-016,Tomato Sauce,Sauces,kg,16,55,2027-03-31,Siam Pasta Supply,5,12.1,Batch #20260901
+ING-017,Bacon Slices,Meat,kg,3.2,280,2026-10-24,Cold Chain Meats,3,1.2,Batch #20261013
+ING-018,Chicken Breast,Meat,kg,2.5,120,2026-10-20,Cold Chain Meats,5,2.3,Batch #20261015
+ING-019,Shrimp,Seafood,kg,2.2,320,2026-10-19,Cold Chain Meats,2,0.9,Batch #20261016
+ING-020,Eggs,Dairy,Piece,90,4.5,2026-10-31,CP Freshmart,30,38.4,Batch #20261012
+ING-021,Parmesan Cheese,Dairy,kg,2.5,780,2027-01-15,Siam Pasta Supply,1,2.48,Batch #20260915
+ING-022,Button Mushrooms,Produce,kg,0.7,110,2026-10-21,Talat Thai Fruit,3,1.0,Batch #20261015
+ING-023,Garlic,Produce,kg,3,70,2026-11-10,Talat Thai Fruit,2,3.3,Batch #20261008
+ING-024,Fresh Basil,Produce,kg,0.05,180,2026-10-20,Talat Thai Fruit,1,0.17,Batch #20261016
+ING-025,Holy Basil,Produce,kg,0.5,140,2026-10-19,Talat Thai Fruit,1,0.3,Batch #20261015
+ING-026,Olive Oil 1L,Dry Goods,Bottle,6,290,2027-09-30,Siam Pasta Supply,2,2.62,Batch #20260720
+ING-027,Dried Chili Flakes,Dry Goods,kg,1.2,240,2027-06-30,Siam Pasta Supply,1,0.43,Batch #20260801
+ING-028,Butter,Dairy,kg,3,320,2026-12-15,CP Freshmart,2,1.35,Batch #20260928
+ING-029,Pesto Sauce,Sauces,kg,1.8,420,2027-01-31,Siam Pasta Supply,1,0.9,Batch #20260918
+ING-030,Baguette (Garlic Bread),Bakery,Piece,14,22,2026-10-19,BakeCraft,10,6.0,Batch #20261016
+ING-031,Sponge Cake Sheet,Bakery,kg,3,180,2026-10-20,BakeCraft,2,2.0,Batch #20261015
+ING-032,Cup & Lid Set,Packaging,Piece,1800,3.5,2028-12-31,PackPro Thailand,500,1008,Batch #20260901
