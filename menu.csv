@@ -1,0 +1,17 @@
+id,name,category,price,cogs,base_sales,weather_sensitivity
+1,Thai Milk Tea (Cold),Beverage,65,15.88,127,hot
+2,Espresso Latte (Hot/Iced),Beverage,75,24.02,92,neutral
+3,Fresh Mango Cake Slice,Dessert,95,39.4,42,hot
+4,Iced Americano,Beverage,60,16.1,41,hot
+5,Matcha Latte,Beverage,85,25.95,23,neutral
+6,Hot Cocoa,Beverage,70,22.55,13,cool
+7,Mango Smoothie,Beverage,89,28.05,19,hot
+8,Lemon Soda,Beverage,55,14.6,21,hot
+9,Spaghetti Carbonara,Pasta,159,50.04,24,neutral
+10,Spaghetti Tomato & Basil,Pasta,139,27.33,16,neutral
+11,Penne Arrabbiata,Pasta,145,27.11,11,neutral
+12,Creamy Mushroom Fettuccine,Pasta,165,43.1,15,neutral
+13,Spaghetti Pad Kee Mao,Pasta,155,28.6,19,neutral
+14,Shrimp Aglio e Olio,Pasta,189,48.26,11,neutral
+15,Chicken Pesto Penne,Pasta,169,43.46,10,neutral
+16,Garlic Bread,Side,69,18.1,15,neutral
