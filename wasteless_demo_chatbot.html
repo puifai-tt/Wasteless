@@ -1,0 +1,2525 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wasteless - Sales Forecast & Food Waste Reduction</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20537%20537%22%20width=%22537%22%20height=%22537%22%3E%0A%3Cdefs%3E%0A%3ClinearGradient%20id=%22wl-bg%22%20x1=%220%22%20y1=%220%22%20x2=%220%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%233f9dfa%22/%3E%3Cstop%20offset=%22.3%22%20stop-color=%22%230b73ea%22/%3E%3Cstop%20offset=%22.62%22%20stop-color=%22%231180e0%22/%3E%3Cstop%20offset=%22.8%22%20stop-color=%22%232aa0b8%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%232f9f8c%22/%3E%3C/linearGradient%3E%0A%3CradialGradient%20id=%22wl-glow%22%20cx=%22.5%22%20cy=%221%22%20r=%22.62%22%20gradientTransform=%22translate(0%20.06)%20scale(1%20.9)%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%236fd67a%22/%3E%3Cstop%20offset=%22.55%22%20stop-color=%22%234cc08e%22%20stop-opacity=%22.7%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%234cc08e%22%20stop-opacity=%220%22/%3E%3C/radialGradient%3E%0A%3ClinearGradient%20id=%22wl-gloss%22%20x1=%220%22%20y1=%220%22%20x2=%220%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23fff%22%20stop-opacity=%22.38%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23fff%22%20stop-opacity=%220%22/%3E%3C/linearGradient%3E%0A%3ClinearGradient%20id=%22wl-leaf%22%20gradientUnits=%22userSpaceOnUse%22%20x1=%22295%22%20y1=%2254%22%20x2=%22242%22%20y2=%22333%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23a6dea0%22/%3E%3Cstop%20offset=%22.45%22%20stop-color=%22%236cc77f%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%2334a45a%22/%3E%3C/linearGradient%3E%0A%3Cfilter%20id=%22wl-sh%22%20x=%22-15%25%22%20y=%22-15%25%22%20width=%22130%25%22%20height=%22140%25%22%3E%3CfeDropShadow%20dx=%220%22%20dy=%225%22%20stdDeviation=%224%22%20flood-color=%22%2300265e%22%20flood-opacity=%22.4%22/%3E%3C/filter%3E%0A%3C/defs%3E%0A%3Crect%20width=%22537%22%20height=%22537%22%20rx=%22132%22%20fill=%22url(%23wl-bg)%22/%3E%0A%3Crect%20width=%22537%22%20height=%22537%22%20rx=%22132%22%20fill=%22url(%23wl-glow)%22/%3E%0A%3Cpath%20d=%22M0%20161Q0%200%20161%200H376Q537%200%20537%20161V204Q268%20268%200%20204Z%22%20fill=%22url(%23wl-gloss)%22%20opacity=%22.55%22/%3E%0A%3Crect%20x=%221.5%22%20y=%221.5%22%20width=%22534%22%20height=%22534%22%20rx=%22129%22%20fill=%22none%22%20stroke=%22%23fff%22%20stroke-opacity=%22.35%22%20stroke-width=%223%22/%3E%0A%3Cpath%20d=%22M92.2%20194.2%20L199.8%20397.8%20L219.5%20402.5%20L226.2%20400.2%20L268.2%20322.2%20L309.8%20397.0%20L318.2%20402.2%20L334.2%20401.8%20L427.0%20229.2%20L425.8%20226.0%20L401.5%20229.2%20L324.5%20371.5%20L268.5%20274.8%20L213.5%20372.0%20L130.0%20217.0%20L153.0%20217.8%20L206.2%20317.0%20L215.2%20326.8%20L268.0%20230.0%20L300.5%20285.8%20L307.0%20285.0%20L317.8%20275.5%20L277.5%20194.2%20L260.5%20194.2%20L213.8%20279.2%20L165.8%20193.8Z%22%20fill=%22%23fff%22%20fill-rule=%22evenodd%22%20filter=%22url(%23wl-sh)%22/%3E%0A%3Cpath%20d=%22M454.0%20112.9%20Q452.0%20112.5%20450.2%20111.1%20Q448.5%20109.8%20437.8%20113.5%20Q427.0%20117.2%20427.0%20119.4%20Q427.0%20121.5%20425.8%20122.5%20Q424.5%20123.5%20421.5%20124.0%20Q418.5%20124.5%20416.5%20123.1%20Q414.5%20121.8%20406.9%20126.0%20Q399.2%20130.2%20394.8%20135.1%20Q390.2%20140.0%20388.0%20143.8%20Q385.8%20147.5%20383.6%20154.9%20Q381.5%20162.2%20381.1%20171.5%20Q380.8%20180.8%20375.0%20190.4%20Q369.2%20200.0%20367.8%20201.0%20Q366.2%20202.0%20364.9%20200.9%20Q363.5%20199.8%20362.9%20193.4%20Q362.2%20187.0%20360.8%20181.9%20Q359.2%20176.8%20356.4%20171.5%20Q353.5%20166.2%20348.6%20162.5%20Q343.8%20158.8%20339.6%20157.1%20Q335.5%20155.5%20332.1%20152.1%20Q328.8%20148.8%20318.2%20144.9%20Q307.8%20141.0%20305.8%20141.4%20Q303.8%20141.8%20303.4%20146.5%20Q303.0%20151.2%20304.6%20159.2%20Q306.2%20167.2%20309.1%20174.1%20Q312.0%20181.0%20314.4%20184.2%20Q316.8%20187.5%20323.4%20192.8%20Q330.0%20198.0%20334.9%20199.6%20Q339.8%20201.2%20341.9%20200.8%20Q344.0%20200.2%20344.1%20198.6%20Q344.2%20197.0%20342.5%20193.0%20Q340.8%20189.0%20335.4%20181.1%20Q330.0%20173.2%20330.5%20171.6%20Q331.0%20170.0%20332.2%20170.0%20Q333.5%20170.0%20338.4%20174.1%20Q343.2%20178.2%20346.8%20183.0%20Q350.2%20187.8%20352.5%20192.1%20Q354.8%20196.5%20356.1%20201.9%20Q357.5%20207.2%20356.8%20214.5%20Q356.0%20221.8%20349.8%20236.1%20Q343.5%20250.5%20335.8%20263.8%20Q328.0%20277.0%20319.6%20286.4%20Q311.2%20295.8%20317.6%20307.4%20Q324.0%20319.0%20326.0%20317.4%20Q328.0%20315.8%20336.9%20297.9%20Q345.8%20280.0%20366.8%20233.1%20Q387.8%20186.2%20396.4%20173.1%20Q405.0%20160.0%20415.0%20151.1%20Q425.0%20142.2%20426.6%20142.8%20Q428.2%20143.2%20427.8%20145.2%20Q427.2%20147.2%20421.2%20154.1%20Q415.2%20161.0%20410.0%20168.9%20Q404.8%20176.8%20402.8%20181.6%20Q400.8%20186.5%20402.1%20188.1%20Q403.5%20189.8%20409.8%20189.1%20Q416.0%20188.5%20422.0%20186.4%20Q428.0%20184.2%20434.9%20179.4%20Q441.8%20174.5%20446.1%20169.0%20Q450.5%20163.5%20453.6%20156.4%20Q456.8%20149.2%20459.2%20135.8%20Q461.8%20122.2%20458.9%20117.8%20Q456.0%20113.2%20454.0%20112.9Z%22%20fill=%22url(%23wl-leaf)%22%20fill-rule=%22evenodd%22/%3E%0A%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- PAPAPARSE LIBRARY FOR LOCAL CSV READING & WRITING -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+:root { --blue:#1479ee; --blue-d:#0b66d6; --ink:#0f2744; --line:#e1ebf8; }
+body {
+  font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(1100px 480px at 88% -8%, #d9eaff 0%, transparent 60%),
+    radial-gradient(900px 420px at -8% 8%, #e7f2ff 0%, transparent 55%),
+    radial-gradient(900px 380px at 55% 112%, #e2f6ea 0%, transparent 60%),
+    #f5f9ff;
+  background-attachment: fixed;
+}
+h1, h3, .kpi .text-2xl { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #eef5ff; }
+::-webkit-scrollbar-thumb { background: #b7d4f5; border-radius: 3px; }
+
+/* ---------- Header ---------- */
+.app-header { position: sticky; background: rgba(255,255,255,.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #dfeafa; box-shadow: 0 6px 24px -14px rgba(30,100,200,.45); }
+.app-header::before { content:""; position:absolute; inset:0 0 auto 0; height:3px; background: linear-gradient(90deg,#0b6fe0,#2aa0b8,#6fd67a); }
+.logo-mark { background: none; border-radius: 24%; box-shadow: 0 8px 18px -8px rgba(15,90,200,.7); }
+.wl { display:block; width:100%; height:100%; }
+.nav-tab {
+  display:flex; align-items:center; gap:.5rem; white-space:nowrap; flex-shrink:0;
+  padding:.8rem 1rem; font-size:.84rem; font-weight:600; color:#5b7089;
+  border-bottom:3px solid transparent; transition:all .15s ease; cursor:pointer; border-radius:.6rem .6rem 0 0;
+}
+.nav-tab:hover { color:#0f2744; background:#f3f8ff; }
+.nav-tab.active-nav-tab { color:#1479ee; border-bottom-color:#1479ee; background:linear-gradient(180deg,#fff,#eaf4ff); }
+
+/* ---------- Titles ---------- */
+main h1::before { content:""; display:inline-block; width:5px; height:1.05em; margin-right:.6rem; border-radius:5px;
+  background:linear-gradient(#3f9dfa,#0b66d6); vertical-align:-.15em; }
+main h1 { color: var(--ink) !important; }
+
+/* ---------- Hero (dashboard) ---------- */
+.hero { position:relative; overflow:hidden; border-radius:1.5rem; padding:1.5rem 1.75rem;
+  background: linear-gradient(120deg,#0a49a8 0%,#0b73ea 58%,#2aa0b8 100%); color:#fff;
+  box-shadow: 0 22px 44px -22px rgba(20,121,238,.7); }
+.hero::before, .hero::after { content:""; position:absolute; border-radius:50%; pointer-events:none; }
+.hero::before { width:280px; height:280px; right:-70px; top:-120px; background:rgba(255,255,255,.12); }
+.hero::after { width:170px; height:170px; right:170px; bottom:-95px; background:rgba(255,255,255,.08); }
+.hero > * { position:relative; z-index:1; }
+main .hero h1 { color:#fff !important; font-size:1.65rem; }
+main .hero h1::before { display:none; }
+.hero p { color:rgba(255,255,255,.86) !important; font-size:.8rem; }
+.hero-btn { padding:.5rem .9rem; font-size:.75rem; font-weight:700; color:#fff; border-radius:.85rem;
+  background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.35); backdrop-filter:blur(6px);
+  display:flex; align-items:center; gap:.4rem; transition:all .15s; }
+.hero-btn:hover { background:rgba(255,255,255,.28); }
+
+/* ---------- Cards / KPI ---------- */
+main .bg-white.rounded-2xl { border-radius:1.15rem; }
+main .bg-white.rounded-2xl.border { border-color: var(--line);
+  box-shadow: 0 1px 2px rgba(15,60,120,.04), 0 12px 30px -18px rgba(30,100,200,.28); }
+.kpi { position:relative; overflow:hidden; transition: transform .18s, box-shadow .18s; }
+.kpi:hover { transform: translateY(-3px); }
+.kpi::before { content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:linear-gradient(#3f9dfa,#0b66d6); }
+.kpi:nth-child(2)::before { background:linear-gradient(#b79cff,#7c3aed); }
+.kpi:nth-child(3)::before { background:linear-gradient(#6fd67a,#34a45a); }
+.kpi:nth-child(4)::before { background:linear-gradient(#fbbf24,#f59e0b); }
+.kpi .text-2xl { font-size:1.7rem; letter-spacing:-.02em; }
+main .bg-slate-50.border-b { background: linear-gradient(90deg,#eef6ff,#ffffff) !important; }
+
+/* ---------- Tables ---------- */
+main thead { background:#eaf3ff !important; }
+main thead th { color:#2b5ea3; font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; font-weight:800; }
+main tbody tr:hover { background:#f3f8ff !important; }
+main tfoot { background:#f1f7ff !important; }
+
+/* ---------- Buttons / inputs / modals ---------- */
+[class~="bg-[#1479ee]"] { background-image: linear-gradient(135deg,#3f9dfa,#0b6fe0); }
+button[class~="bg-[#1479ee]"] { box-shadow: 0 8px 18px -8px rgba(20,121,238,.75); transition: all .15s; }
+button[class~="bg-[#1479ee]"]:hover { filter:brightness(1.06); transform:translateY(-1px); }
+button:disabled { opacity:.45; cursor:not-allowed; }
+select:focus, input:focus, textarea:focus { outline:none; border-color:#1479ee !important; box-shadow:0 0 0 3px rgba(20,121,238,.2); }
+@keyframes pop { from { opacity:0; transform: translateY(10px) scale(.98); } to { opacity:1; transform:none; } }
+[id$="Modal"] > div { animation: pop .2s ease; }
+
+/* ---------- Today markers ---------- */
+@keyframes pulseDot { 0%{box-shadow:0 0 0 0 rgba(20,121,238,.55);} 70%{box-shadow:0 0 0 7px rgba(20,121,238,0);} 100%{box-shadow:0 0 0 0 rgba(20,121,238,0);} }
+@keyframes pulseWhite { 0%{box-shadow:0 0 0 0 rgba(255,255,255,.75);} 70%{box-shadow:0 0 0 6px rgba(255,255,255,0);} 100%{box-shadow:0 0 0 0 rgba(255,255,255,0);} }
+.today-chip { display:inline-flex; align-items:center; gap:.45rem; padding:.42rem .75rem; border-radius:.85rem; cursor:pointer;
+  background:linear-gradient(135deg,#2f93f5,#0b66d6); color:#fff; font-size:11px; font-weight:800; border:1.5px solid transparent;
+  box-shadow:0 8px 18px -8px rgba(20,121,238,.8); transition:all .15s; white-space:nowrap; }
+.today-chip:hover { filter:brightness(1.06); }
+.today-chip .today-dot { width:8px; height:8px; border-radius:50%; background:#fff; animation:pulseWhite 1.6s infinite; }
+.today-chip .jump { display:none; font-weight:700; padding-left:.5rem; border-left:1px solid rgba(15,111,220,.3); }
+.today-chip.is-away { background:#fff; color:#0b66d6; border-color:#1479ee; box-shadow:none; }
+.today-chip.is-away .today-dot { background:#1479ee; animation:pulseDot 1.6s infinite; }
+.today-chip.is-away .jump { display:inline; }
+.week-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#1479ee; margin-left:.35rem; animation:pulseDot 1.6s infinite; vertical-align:middle; }
+
+/* ---------- Weather cards ---------- */
+#weatherTimeline { padding-top:.7rem; }
+.weather-card { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-height:178px;
+  padding:.85rem .75rem .7rem; border:1px solid var(--line); border-radius:1rem; background:#fff; cursor:pointer; transition:all .18s ease; }
+.weather-card { --bar:#e1ebf8; box-shadow: inset 0 4px 0 var(--bar); }
+.weather-card.wc-sunny { --bar:#fbbf24; } .weather-card.wc-rainy { --bar:#38bdf8; } .weather-card.wc-cloudy { --bar:#cbd5e1; }
+.weather-card:hover { transform:translateY(-2px); box-shadow: inset 0 4px 0 var(--bar), 0 14px 26px -16px rgba(30,100,200,.5); border-color:#b9d7f7; }
+.weather-card.active-day { border-color:#1479ee; background:linear-gradient(180deg,#e6f2ff,#ffffff); transform:translateY(-3px);
+  box-shadow: inset 0 4px 0 var(--bar), 0 0 0 3px rgba(20,121,238,.2), 0 16px 28px -16px rgba(20,121,238,.6); }
+.weather-card.is-today { border:1.5px solid #1479ee; }
+.weather-card.is-today .wc-day { color:#1479ee; }
+.weather-card.is-today .wc-date { background:#1479ee; color:#fff; padding:0 .4rem; border-radius:.4rem; }
+.today-flag { position:absolute; top:-11px; left:50%; transform:translateX(-50%); z-index:2; display:flex; align-items:center; gap:.3rem;
+  padding:.18rem .6rem; border-radius:999px; background:linear-gradient(135deg,#2f93f5,#0b66d6); color:#fff; font-size:9.5px; font-weight:800;
+  letter-spacing:.09em; white-space:nowrap; box-shadow:0 6px 14px -4px rgba(20,121,238,.8); }
+.today-flag i { width:6px; height:6px; border-radius:50%; background:#fff; animation:pulseWhite 1.6s infinite; }
+.wc-head { display:flex; justify-content:space-between; align-items:center; padding-bottom:.4rem; border-bottom:1px dashed #d5e4f6; }
+.wc-day { font-weight:800; font-size:.82rem; color:var(--ink); }
+.wc-date { font-size:10px; color:#7d93b0; font-weight:700; }
+.wc-weather { display:flex; flex-direction:column; align-items:center; margin:.55rem 0 .3rem; }
+.wc-icon { width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:#f1f6fd; }
+.wc-sunny .wc-icon { background:#fff3d6; } .wc-rainy .wc-icon { background:#dff0ff; } .wc-cloudy .wc-icon { background:#eef1f5; }
+.wc-temp { font-weight:800; font-size:.88rem; margin-top:.3rem; color:var(--ink); }
+.wc-badges { display:flex; gap:.25rem; justify-content:center; flex-wrap:wrap; margin:.2rem 0 .5rem; }
+.chip { font-size:9px; font-weight:800; letter-spacing:.05em; padding:.14rem .45rem; border-radius:.45rem; }
+.chip-weekday { background:#eef2f7; color:#475569; } .chip-weekend { background:#dbeafe; color:#1d4ed8; }
+.chip-festival { background:#fef3c7; color:#b45309; } .chip-event { background:#d9f3f7; color:#0e7490; }
+.wc-foot { padding-top:.45rem; border-top:1px solid #edf3fb; }
+.wc-event { font-size:10px; font-weight:700; color:#1b3558; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.wc-traffic { font-size:10px; font-weight:700; display:block; margin-top:2px; }
+.tr-up { color:#1479ee; } .tr-down { color:#e11d48; } .tr-flat { color:#64748b; font-weight:500; }
+
+/* ---------- Selected-day detail ---------- */
+.detail-card { position:relative; overflow:hidden; background:linear-gradient(120deg,#0a2a58 0%,#0e4a9a 55%,#1479d8 100%);
+  box-shadow:0 24px 44px -24px rgba(10,60,140,.75); }
+.detail-card::after { content:""; position:absolute; width:260px; height:260px; border-radius:50%; right:-80px; top:-120px; background:rgba(255,255,255,.07); pointer-events:none; }
+.detail-card > * { position:relative; z-index:1; }
+.stat-box { background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.18); border-radius:.9rem; padding:.75rem .85rem; }
+.when-badge { display:inline-flex; align-items:center; gap:.35rem; padding:.18rem .6rem; border-radius:999px; font-size:10px; font-weight:800; letter-spacing:.07em;
+  background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.3); color:#fff; }
+.when-badge.is-now { background:#fff; color:#0b66d6; border-color:#fff; }
+.when-badge.is-now i { width:6px; height:6px; border-radius:50%; background:#1479ee; animation:pulseDot 1.6s infinite; }
+.back-today { font-size:11px; font-weight:800; padding:.35rem .7rem; border-radius:.7rem; background:#fff; color:#0b66d6; cursor:pointer; transition:.15s; }
+.back-today:hover { background:#eaf4ff; }
+
+/* ---------- Import / Export buttons ---------- */
+.btn-import, .btn-export { display:inline-flex; align-items:center; gap:.55rem; padding:.3rem .95rem .3rem .3rem; border-radius:.9rem;
+  font-size:.75rem; font-weight:700; white-space:nowrap; cursor:pointer; transition:all .15s ease; }
+.btn-import svg, .btn-export svg { width:1.85rem; height:1.85rem; padding:.4rem; border-radius:.6rem; flex-shrink:0; transition:all .15s; }
+.btn-import { color:#0b66d6; background:#f4f9ff; border:1.5px dashed #8cc4fb; }
+.btn-import svg { background:#dcedff; color:#0b6fe0; }
+.btn-import:hover { background:#e8f3ff; border-style:solid; border-color:#1479ee; transform:translateY(-1px); box-shadow:0 8px 16px -10px rgba(20,121,238,.7); }
+.btn-import:hover svg { background:#1479ee; color:#fff; }
+.btn-export { color:#1b3558; background:#fff; border:1.5px solid #d5e4f6; box-shadow:0 1px 2px rgba(15,60,120,.05); }
+.btn-export svg { background:#eef2f7; color:#51657f; }
+.btn-export:hover { border-color:#1479ee; color:#0b66d6; transform:translateY(-1px); box-shadow:0 8px 16px -10px rgba(20,121,238,.55); }
+.btn-export:hover svg { background:#dcedff; color:#0b6fe0; }
+
+/* ---------- Weather reality-check card ---------- */
+.fb-card { display:flex; flex-wrap:wrap; align-items:center; gap:1rem 1.25rem; padding:1rem 1.1rem; border-radius:1rem; margin-top:.25rem;
+  background:linear-gradient(100deg,#eef6ff 0%,#ffffff 70%); border:1px solid #cfe3fa; }
+.fb-head { flex:1 1 100%; display:flex; align-items:center; gap:.8rem; flex-wrap:wrap; }
+.fb-head .fb-export { margin-left:auto; }
+.fb-main { display:flex; align-items:center; gap:.8rem; flex:1 1 280px; min-width:0; }
+.fb-icon { width:2.6rem; height:2.6rem; border-radius:.9rem; display:grid; place-items:center; font-size:1.3rem; flex-shrink:0;
+  background:linear-gradient(135deg,#3f9dfa,#0b66d6); box-shadow:0 8px 16px -8px rgba(20,121,238,.8); }
+.fb-title { font-size:.82rem; font-weight:800; color:#0f2744; display:flex; align-items:center; gap:.4rem; flex-wrap:wrap; }
+.fb-sub { font-size:.72rem; color:#5b7089; margin-top:.15rem; }
+.fb-sub b { color:#0f2744; }
+.fb-actions { display:flex; gap:.5rem; flex-wrap:wrap; }
+.fb-btn { padding:.5rem .9rem; border-radius:.8rem; font-size:.75rem; font-weight:800; border:1.5px solid #cfe3fa; background:#fff; color:#1b3558; cursor:pointer; transition:all .15s; }
+.fb-btn:hover { transform:translateY(-1px); border-color:#1479ee; color:#0b66d6; }
+.fb-btn.sel-rain { background:linear-gradient(135deg,#3f9dfa,#0b6fe0); color:#fff; border-color:transparent; box-shadow:0 8px 16px -8px rgba(20,121,238,.8); }
+.fb-btn.sel-dry { background:linear-gradient(135deg,#fbbf24,#f59e0b); color:#fff; border-color:transparent; box-shadow:0 8px 16px -8px rgba(245,158,11,.8); }
+.fb-stats { display:flex; gap:.6rem; align-items:center; flex-wrap:wrap; }
+.fb-stat { background:#fff; border:1px solid #dbe8f8; border-radius:.8rem; padding:.4rem .7rem; text-align:center; }
+.fb-stat b { display:block; font-size:.9rem; color:#0b66d6; font-family:'Plus Jakarta Sans','Inter',sans-serif; }
+.fb-stat span { font-size:9.5px; font-weight:700; color:#7d93b0; text-transform:uppercase; letter-spacing:.05em; }
+.fb-result { font-size:.72rem; font-weight:700; margin-top:.3rem; }
+.fb-result.ok { color:#0a8f5a; } .fb-result.miss { color:#d97706; }
+.chip-today { background:#1479ee; color:#fff; }
+.chip-ok { background:#d1fae5; color:#047857; } .chip-miss { background:#fef3c7; color:#b45309; }
+.fb-export { display:inline-flex; align-items:center; gap:.45rem; padding:.45rem .8rem .45rem .65rem; border-radius:.8rem; font-size:.72rem; font-weight:800; color:#0b66d6; background:#fff; border:1.5px solid #cfe3fa; cursor:pointer; transition:all .15s; }
+.fb-export svg { width:.95rem; height:.95rem; }
+.fb-export em { font-style:normal; font-size:10px; background:#e8f2ff; color:#0b66d6; padding:.05rem .45rem; border-radius:999px; transition:all .15s; }
+.fb-export:hover { background:linear-gradient(135deg,#3f9dfa,#0b6fe0); color:#fff; border-color:transparent; box-shadow:0 8px 16px -8px rgba(20,121,238,.8); transform:translateY(-1px); }
+.fb-export:hover em { background:rgba(255,255,255,.25); color:#fff; }
+.fb-export:focus-visible { outline:2px solid #1479ee; outline-offset:2px; }
+
+/* ---------- Todo ---------- */
+.todo { display:flex; align-items:center; gap:.85rem; text-align:left; padding:.85rem 1rem; border:1px solid #dbe8f8; border-radius:1rem; background:#f8fbff; cursor:pointer; transition:all .15s; }
+.todo:hover { background:#fff; border-color:#1479ee; transform:translateY(-2px); box-shadow:0 12px 24px -16px rgba(20,121,238,.6); }
+.todo-num { width:2rem; height:2rem; border-radius:.7rem; display:grid; place-items:center; flex-shrink:0; color:#fff; font-weight:800; font-size:.85rem; background:linear-gradient(135deg,#3f9dfa,#0b66d6); }
+.todo-text { flex:1; min-width:0; } .todo-text b { display:block; font-size:.8rem; color:#0f2744; } .todo-text small { display:block; font-size:.7rem; color:#5b7089; margin-top:2px; }
+.todo-go { color:#1479ee; font-weight:800; transition:transform .15s; } .todo:hover .todo-go { transform:translateX(3px); }
+
+/* ---------- Landing page ---------- */
+body.ld-open { overflow:hidden; }
+#landing { position:fixed; inset:0; z-index:80; overflow-y:auto; background:#f5f9ff; transition:opacity .45s ease, transform .45s ease; }
+#landing.ld-hide { opacity:0; transform:translateY(-24px); pointer-events:none; }
+.ld-wrap { max-width:1180px; margin:0 auto; padding:0 1.5rem; }
+.ld-top { position:relative; overflow:hidden; color:#fff; border-radius:0 0 3rem 3rem; padding-bottom:5.5rem;
+  background:radial-gradient(900px 500px at 85% 0%, #4db3ff 0%, transparent 60%), linear-gradient(135deg,#052a66 0%,#0a55c4 48%,#1479ee 78%,#2aa0b8 100%); }
+.ld-top::before { content:""; position:absolute; inset:0; opacity:.5; pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px); background-size:46px 46px;
+  -webkit-mask-image:radial-gradient(circle at 70% 30%,#000 0%,transparent 70%); mask-image:radial-gradient(circle at 70% 30%,#000 0%,transparent 70%); }
+.ld-orb { position:absolute; border-radius:50%; pointer-events:none; filter:blur(2px); animation:floaty 9s ease-in-out infinite; }
+.ld-orb.o1 { width:320px; height:320px; right:-90px; top:-120px; background:rgba(255,255,255,.10); }
+.ld-orb.o2 { width:180px; height:180px; left:-60px; bottom:30px; background:rgba(255,255,255,.08); animation-delay:-3s; }
+@keyframes floaty { 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(14px);} }
+.ld-nav { position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between; padding:1.25rem 0; }
+.ld-brand { display:flex; align-items:center; gap:.7rem; font-family:'Plus Jakarta Sans','Inter',sans-serif; font-weight:800; font-size:1.25rem; }
+.ld-brand .mk { width:2.7rem; height:2.7rem; border-radius:24%; display:block; box-shadow:0 10px 20px -8px rgba(2,20,60,.6); }
+.ld-nav-btn { padding:.55rem 1.1rem; border-radius:.9rem; font-size:.8rem; font-weight:700; color:#fff; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.4); transition:.15s; cursor:pointer; }
+.ld-nav-btn:hover { background:rgba(255,255,255,.28); }
+.ld-hero { position:relative; z-index:2; display:grid; grid-template-columns:1.05fr .95fr; gap:3rem; align-items:center; padding-top:2.5rem; }
+.ld-pill { display:inline-flex; align-items:center; gap:.5rem; padding:.35rem .85rem; border-radius:999px; font-size:.72rem; font-weight:700; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3); }
+.ld-pill i { width:7px; height:7px; border-radius:50%; background:#7dd3fc; animation:pulseWhite 1.8s infinite; }
+.ld-hero h1 { font-family:'Plus Jakarta Sans','Inter',sans-serif; font-size:clamp(2.3rem,5vw,3.7rem); line-height:1.05; font-weight:800; letter-spacing:-.03em; margin:1.1rem 0 1rem; }
+.ld-hero h1 span { background:linear-gradient(90deg,#bfe3ff,#ffffff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.ld-hero p.lead { font-size:1.02rem; line-height:1.65; color:rgba(255,255,255,.86); max-width:34rem; }
+.ld-cta { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.8rem; }
+.ld-btn-primary { padding:.9rem 1.6rem; border-radius:1rem; font-weight:800; font-size:.9rem; color:#0a55c4; background:#fff; cursor:pointer; box-shadow:0 18px 34px -14px rgba(3,30,80,.7); transition:.18s; }
+.ld-btn-primary:hover { transform:translateY(-2px); box-shadow:0 22px 38px -14px rgba(3,30,80,.8); }
+.ld-btn-ghost { padding:.9rem 1.4rem; border-radius:1rem; font-weight:700; font-size:.9rem; color:#fff; background:transparent; border:1.5px solid rgba(255,255,255,.5); cursor:pointer; transition:.18s; }
+.ld-btn-ghost:hover { background:rgba(255,255,255,.14); }
+.ld-branch { display:inline-flex; align-items:center; gap:.6rem; margin-top:1.4rem; font-size:.75rem; font-weight:600; color:rgba(255,255,255,.85); }
+.ld-branch select { padding:.45rem .8rem; border-radius:.8rem; background:rgba(255,255,255,.16); color:#fff; border:1px solid rgba(255,255,255,.4); font-weight:700; font-size:.78rem; }
+.ld-branch select option { color:#0f2744; }
+.ld-visual { position:relative; padding:1.2rem 0 1.2rem 1rem; }
+.pv-card { background:#fff; color:#0f2744; border-radius:1.6rem; padding:1.3rem; box-shadow:0 40px 70px -30px rgba(2,20,60,.75); transform:rotate(1.5deg); }
+.pv-top { display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; }
+.pv-tag { display:inline-block; font-size:9.5px; font-weight:800; letter-spacing:.09em; padding:.15rem .55rem; border-radius:999px; color:#fff; background:linear-gradient(135deg,#2f93f5,#0b66d6); }
+.pv-top h4 { font-family:'Plus Jakarta Sans','Inter',sans-serif; font-size:1.15rem; font-weight:800; margin-top:.4rem; }
+.pv-top p { font-size:.72rem; color:#5b7089; margin-top:2px; }
+.pv-weather { text-align:center; background:#fff3d6; border-radius:1rem; padding:.5rem .8rem; } .pv-weather span { font-size:1.4rem; display:block; } .pv-weather b { font-size:.85rem; }
+.pv-demand { display:flex; justify-content:space-between; align-items:center; margin:1rem 0 .4rem; padding:.7rem .9rem; border-radius:1rem; background:#eef6ff; font-size:.75rem; font-weight:700; color:#2b5ea3; }
+.pv-demand b { font-family:'Plus Jakarta Sans','Inter',sans-serif; font-size:1.3rem; color:#0b66d6; }
+.pv-bars { display:flex; align-items:flex-end; gap:.45rem; height:92px; padding:.4rem .2rem 0; }
+.pv-bar { flex:1; height:100%; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; gap:4px; }
+.pv-bar i { display:block; width:100%; border-radius:.5rem .5rem .25rem .25rem; background:#cfe5fb; }
+.pv-bar.is-today i { background:linear-gradient(180deg,#3f9dfa,#0b66d6); box-shadow:0 8px 14px -6px rgba(20,121,238,.7); }
+.pv-bar span { font-size:9px; font-weight:700; color:#7d93b0; } .pv-bar.is-today span { color:#0b66d6; }
+.pv-alert { display:flex; align-items:center; gap:.5rem; margin-top:.9rem; padding:.6rem .8rem; border-radius:.9rem; background:#fff4e5; color:#b45309; font-size:.72rem; font-weight:700; }
+.pv-alert i { width:8px; height:8px; border-radius:50%; background:#f59e0b; }
+.pv-chip { position:absolute; z-index:3; display:flex; align-items:center; gap:.5rem; padding:.55rem .85rem; border-radius:1rem; background:#fff; color:#0f2744; font-size:.74rem; font-weight:800; box-shadow:0 20px 34px -18px rgba(2,20,60,.7); animation:floaty 7s ease-in-out infinite; }
+.pv-chip small { display:block; font-weight:600; color:#7d93b0; font-size:.62rem; }
+.pv-chip .ic { width:1.8rem; height:1.8rem; border-radius:.6rem; display:grid; place-items:center; color:#fff; font-size:.85rem; }
+.pv-chip.c1 { left:-1.2rem; top:3.2rem; } .pv-chip.c1 .ic { background:linear-gradient(135deg,#34d399,#059669); }
+.pv-chip.c2 { right:-.6rem; bottom:.4rem; animation-delay:-3.5s; } .pv-chip.c2 .ic { background:linear-gradient(135deg,#3f9dfa,#0b66d6); }
+.ld-stats { position:relative; z-index:3; max-width:1000px; margin:-3rem auto 0; padding:0 1.5rem; display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.ld-stat { background:#fff; border-radius:1.2rem; padding:1.1rem 1.3rem; text-align:center; border:1px solid #e1ebf8; box-shadow:0 24px 40px -26px rgba(30,100,200,.5); }
+.ld-stat b { display:block; font-family:'Plus Jakarta Sans','Inter',sans-serif; font-size:1.7rem; font-weight:800; color:#0b66d6; letter-spacing:-.02em; }
+.ld-stat span { font-size:.72rem; font-weight:600; color:#5b7089; }
+.ld-section { padding:4.5rem 0 0; text-align:center; }
+.ld-section h2 { font-family:'Plus Jakarta Sans','Inter',sans-serif; font-size:clamp(1.5rem,3vw,2.1rem); font-weight:800; color:#0f2744; letter-spacing:-.02em; }
+.ld-section p.sub { color:#5b7089; font-size:.92rem; margin-top:.5rem; }
+.ld-features { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.1rem; margin-top:2rem; text-align:left; }
+.ld-feature { background:#fff; border:1px solid #e1ebf8; border-radius:1.4rem; padding:1.4rem; box-shadow:0 14px 30px -22px rgba(30,100,200,.45); }
+
+.ld-feature .ft { width:2.9rem; height:2.9rem; border-radius:1rem; display:grid; place-items:center; color:#fff; margin-bottom:1rem; }
+.ld-feature .ft svg { width:1.5rem; height:1.5rem; }
+.ld-feature h3 { font-size:1rem; font-weight:800; color:#0f2744; } .ld-feature p { font-size:.8rem; line-height:1.55; color:#5b7089; margin-top:.4rem; }
+.ld-feature .go { display:inline-block; margin-top:.9rem; font-size:.78rem; font-weight:800; color:#1479ee; }
+.ld-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; margin-top:2rem; text-align:left; }
+.ld-step { position:relative; background:linear-gradient(180deg,#eef6ff,#fff); border:1px solid #d6e7fa; border-radius:1.4rem; padding:1.4rem 1.4rem 1.3rem; }
+.ld-step .n { font-family:'Plus Jakarta Sans','Inter',sans-serif; font-size:2.4rem; font-weight:800; line-height:1; color:#b9d9fb; }
+.ld-step h3 { font-size:.95rem; font-weight:800; color:#0f2744; margin-top:.5rem; } .ld-step p { font-size:.78rem; color:#5b7089; margin-top:.3rem; line-height:1.55; }
+.ld-final { margin:4.5rem auto 3rem; max-width:1100px; padding:2.6rem 1.5rem; border-radius:2rem; text-align:center; color:#fff; position:relative; overflow:hidden;
+  background:linear-gradient(120deg,#0a49a8 0%,#0b73ea 62%,#3bb38f 100%); box-shadow:0 30px 50px -28px rgba(20,121,238,.8); }
+.ld-final::after { content:""; position:absolute; width:260px; height:260px; border-radius:50%; right:-70px; top:-110px; background:rgba(255,255,255,.12); }
+.ld-final h2 { font-family:'Plus Jakarta Sans','Inter',sans-serif; font-size:1.7rem; font-weight:800; position:relative; z-index:1; }
+.ld-final p { color:rgba(255,255,255,.86); margin:.5rem 0 1.4rem; font-size:.9rem; position:relative; z-index:1; }
+.ld-final button { position:relative; z-index:1; }
+.ld-foot { margin-top:4rem; text-align:center; font-size:.72rem; color:#7d93b0; padding-bottom:2rem; }
+@media (max-width: 900px) {
+  .ld-hero { grid-template-columns:1fr; gap:2rem; } .ld-visual { padding:0; } .pv-card { transform:none; } .pv-chip.c1 { left:-.3rem; }
+  .ld-stats { grid-template-columns:1fr; margin-top:-2.5rem; } .ld-steps { grid-template-columns:1fr; } .ld-top { border-radius:0 0 2rem 2rem; }
+}
+</style>
+</head>
+<body class="h-full flex flex-col text-slate-800 antialiased selection:bg-[#1479ee] selection:text-white relative">
+<!-- WASTELESS LOGO (vector SVG, stays sharp at any size) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="wl-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f9dfa"/><stop offset=".3" stop-color="#0b73ea"/><stop offset=".62" stop-color="#1180e0"/><stop offset=".8" stop-color="#2aa0b8"/><stop offset="1" stop-color="#2f9f8c"/></linearGradient>
+<radialGradient id="wl-glow" cx=".5" cy="1" r=".62" gradientTransform="translate(0 .06) scale(1 .9)"><stop offset="0" stop-color="#6fd67a"/><stop offset=".55" stop-color="#4cc08e" stop-opacity=".7"/><stop offset="1" stop-color="#4cc08e" stop-opacity="0"/></radialGradient>
+<linearGradient id="wl-gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="wl-leaf" gradientUnits="userSpaceOnUse" x1="295" y1="54" x2="242" y2="333"><stop offset="0" stop-color="#a6dea0"/><stop offset=".45" stop-color="#6cc77f"/><stop offset="1" stop-color="#34a45a"/></linearGradient>
+<filter id="wl-sh" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#00265e" flood-opacity=".4"/></filter>
+</defs>
+<symbol id="wl-logo" viewBox="0 0 537 537">
+<rect width="537" height="537" rx="132" fill="url(#wl-bg)"/>
+<rect width="537" height="537" rx="132" fill="url(#wl-glow)"/>
+<path d="M0 161Q0 0 161 0H376Q537 0 537 161V204Q268 268 0 204Z" fill="url(#wl-gloss)" opacity=".55"/>
+<rect x="1.5" y="1.5" width="534" height="534" rx="129" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/>
+<path d="M92.2 194.2 L199.8 397.8 L219.5 402.5 L226.2 400.2 L268.2 322.2 L309.8 397.0 L318.2 402.2 L334.2 401.8 L427.0 229.2 L425.8 226.0 L401.5 229.2 L324.5 371.5 L268.5 274.8 L213.5 372.0 L130.0 217.0 L153.0 217.8 L206.2 317.0 L215.2 326.8 L268.0 230.0 L300.5 285.8 L307.0 285.0 L317.8 275.5 L277.5 194.2 L260.5 194.2 L213.8 279.2 L165.8 193.8Z" fill="#fff" fill-rule="evenodd" filter="url(#wl-sh)"/>
+<path d="M454.0 112.9 Q452.0 112.5 450.2 111.1 Q448.5 109.8 437.8 113.5 Q427.0 117.2 427.0 119.4 Q427.0 121.5 425.8 122.5 Q424.5 123.5 421.5 124.0 Q418.5 124.5 416.5 123.1 Q414.5 121.8 406.9 126.0 Q399.2 130.2 394.8 135.1 Q390.2 140.0 388.0 143.8 Q385.8 147.5 383.6 154.9 Q381.5 162.2 381.1 171.5 Q380.8 180.8 375.0 190.4 Q369.2 200.0 367.8 201.0 Q366.2 202.0 364.9 200.9 Q363.5 199.8 362.9 193.4 Q362.2 187.0 360.8 181.9 Q359.2 176.8 356.4 171.5 Q353.5 166.2 348.6 162.5 Q343.8 158.8 339.6 157.1 Q335.5 155.5 332.1 152.1 Q328.8 148.8 318.2 144.9 Q307.8 141.0 305.8 141.4 Q303.8 141.8 303.4 146.5 Q303.0 151.2 304.6 159.2 Q306.2 167.2 309.1 174.1 Q312.0 181.0 314.4 184.2 Q316.8 187.5 323.4 192.8 Q330.0 198.0 334.9 199.6 Q339.8 201.2 341.9 200.8 Q344.0 200.2 344.1 198.6 Q344.2 197.0 342.5 193.0 Q340.8 189.0 335.4 181.1 Q330.0 173.2 330.5 171.6 Q331.0 170.0 332.2 170.0 Q333.5 170.0 338.4 174.1 Q343.2 178.2 346.8 183.0 Q350.2 187.8 352.5 192.1 Q354.8 196.5 356.1 201.9 Q357.5 207.2 356.8 214.5 Q356.0 221.8 349.8 236.1 Q343.5 250.5 335.8 263.8 Q328.0 277.0 319.6 286.4 Q311.2 295.8 317.6 307.4 Q324.0 319.0 326.0 317.4 Q328.0 315.8 336.9 297.9 Q345.8 280.0 366.8 233.1 Q387.8 186.2 396.4 173.1 Q405.0 160.0 415.0 151.1 Q425.0 142.2 426.6 142.8 Q428.2 143.2 427.8 145.2 Q427.2 147.2 421.2 154.1 Q415.2 161.0 410.0 168.9 Q404.8 176.8 402.8 181.6 Q400.8 186.5 402.1 188.1 Q403.5 189.8 409.8 189.1 Q416.0 188.5 422.0 186.4 Q428.0 184.2 434.9 179.4 Q441.8 174.5 446.1 169.0 Q450.5 163.5 453.6 156.4 Q456.8 149.2 459.2 135.8 Q461.8 122.2 458.9 117.8 Q456.0 113.2 454.0 112.9Z" fill="url(#wl-leaf)" fill-rule="evenodd"/>
+</symbol>
+</svg>
+
+<!-- ================= WELCOME / LANDING PAGE ================= -->
+<div id="landing">
+  <div class="ld-top">
+    <div class="ld-orb o1"></div><div class="ld-orb o2"></div>
+    <div class="ld-wrap">
+      <div class="ld-nav">
+        <div class="ld-brand">
+          <span class="mk"><svg class="wl" viewBox="0 0 537 537" role="img" aria-label="Wasteless"><use href="#wl-logo"/></svg></span>
+          Wasteless
+        </div>
+      </div>
+
+      <div class="ld-hero">
+        <div>
+          <span class="ld-pill"><i></i>Smart planning for cafés &amp; restaurants</span>
+          <h1>Prepare what sells.<br><span>Waste less.</span></h1>
+          <p class="lead">Know how much to prepare each day, order only what you need, and use up ingredients before they expire. Everything in one simple dashboard.</p>
+          <div class="ld-cta">
+            <button class="ld-btn-primary" onclick="enterApp('dashboard')">Open Dashboard →</button>
+          </div>
+          <div class="ld-branch">
+            <label for="landingBranch">Your branch</label>
+            <select id="landingBranch" onchange="syncBranch(this.value)">
+              <option value="siam">Siam Paragon Branch</option>
+              <option value="central">CentralWorld Branch</option>
+              <option value="emquartier">EmQuartier Branch</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ld-visual">
+          <div class="pv-chip c1"><span class="ic">฿</span><span>฿42,850 saved<small>this month · +18.4%</small></span></div>
+          <div class="pv-card">
+            <div class="pv-top">
+              <div>
+                <span class="pv-tag" id="pvTag">TODAY</span>
+                <h4 id="pvDate">Sat, Oct 17</h4>
+                <p id="pvEvent">Siam Paragon Sales Fair</p>
+              </div>
+              <div class="pv-weather"><span id="pvIcon">☀️</span><b id="pvTemp">35°C</b></div>
+            </div>
+            <div class="pv-demand"><span>Expected sales</span><b id="pvDemand">+25%</b></div>
+            <div class="pv-bars" id="pvBars"></div>
+            <div class="pv-alert"><i></i><span id="pvAlertText">Fresh Milk 2L · 18 bottles · expires in 24h</span></div>
+          </div>
+          <div class="pv-chip c2"><span class="ic">↓</span><span>34.2% less waste<small>185 kg prevented</small></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ld-stats">
+    <div class="ld-stat"><b>฿42,850</b><span>Money saved this month</span></div>
+    <div class="ld-stat"><b>34.2%</b><span>Food waste reduced</span></div>
+    <div class="ld-stat"><b>94.8%</b><span>Forecast accuracy</span></div>
+  </div>
+
+  <div class="ld-wrap">
+    <div class="ld-section">
+      <h2>Everything you need to run a leaner kitchen</h2>
+      <p class="sub">Four simple tools, one place.</p>
+      <div class="ld-features">
+        <div class="ld-feature">
+          <div class="ft" style="background:linear-gradient(135deg,#3f9dfa,#0b66d6)"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+          <h3>Sales Forecast</h3><p>See expected sales for each menu item, based on the weather, day type and local events.</p>
+        </div>
+        <div class="ld-feature">
+          <div class="ft" style="background:linear-gradient(135deg,#a78bfa,#7c3aed)"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg></div>
+          <h3>Shopping List</h3><p>Get suggested order quantities for every supplier, ready to copy and send.</p>
+        </div>
+        <div class="ld-feature">
+          <div class="ft" style="background:linear-gradient(135deg,#fbbf24,#f59e0b)"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+          <h3>Promotions</h3><p>Turn ingredients that are close to expiry into promotion ideas before they go to waste.</p>
+        </div>
+        <div class="ld-feature">
+          <div class="ft" style="background:linear-gradient(135deg,#34d399,#059669)"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></div>
+          <h3>Inventory &amp; Recipes</h3><p>Keep track of ingredient stock, expiry dates and what goes into each menu item.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ld-section">
+      <h2>How it works</h2>
+      <p class="sub">Three steps, every day.</p>
+      <div class="ld-steps">
+        <div class="ld-step"><div class="n">01</div><h3>Add your sales &amp; stock</h3><p>Import your POS sales and ingredient stock as CSV files.</p></div>
+        <div class="ld-step"><div class="n">02</div><h3>Check the forecast</h3><p>See what to prepare today and what to order from suppliers.</p></div>
+        <div class="ld-step"><div class="n">03</div><h3>Use it up, track savings</h3><p>Promote near-expiry items and watch your waste go down.</p></div>
+      </div>
+    </div>
+
+    <p class="ld-foot">Wasteless · Sales forecasting &amp; food waste reduction</p>
+  </div>
+</div>
+
+<!-- HIDDEN CSV FILE INPUTS FOR DIRECT READING -->
+<input type="file" id="csvInventoryInput" accept=".csv" class="hidden" onchange="importInventoryCSV(event)">
+<input type="file" id="csvMenuInput" accept=".csv" class="hidden" onchange="importMenuCSV(event)">
+<input type="file" id="csvPOSInput" accept=".csv" class="hidden" onchange="importPOSCSV(event)">
+<input type="file" id="csvRecipesInput" accept=".csv" class="hidden" onchange="importRecipesCSV(event)">
+
+<!-- FLOATING AI COPILOT ACTION BUTTON -->
+<button onclick="openCopilotModal()" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-blue-600 to-[#1479ee] text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center space-x-2 ring-4 ring-blue-600/20">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+  <span class="text-xs font-bold hidden sm:inline">Ask Wasteless</span>
+  <span class="flex h-2 w-2 relative">
+    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-300 opacity-75"></span>
+    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-200"></span>
+  </span>
+</button>
+
+<!-- HEADER & TOP NAVIGATION -->
+<header class="app-header sticky top-0 z-30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 gap-4">
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="openLanding()" title="Back to welcome page">
+        <div class="logo-mark w-10 h-10 rounded-2xl flex items-center justify-center text-white font-bold text-xl">
+          <svg class="wl" viewBox="0 0 537 537" role="img" aria-label="Wasteless"><use href="#wl-logo"/></svg>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="text-xl font-bold tracking-tight text-slate-900">Wasteless</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 bg-blue-100 text-blue-800 rounded-full">Local Data</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium hidden sm:block">Sales forecasting & food waste prevention</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <!-- Live Signage Quick View -->
+        <button onclick="openSignageModal()" class="px-3 py-1.5 text-xs font-bold text-cyan-700 bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 rounded-xl transition-all flex items-center space-x-1.5 shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>Store TV</span>
+        </button>
+
+        <!-- POS Import CSV Button -->
+        <button onclick="triggerCSVImport('csvPOSInput')" class="px-3 py-1.5 text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl transition-all flex items-center space-x-1.5 shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-6m0 0l-3 3m3-3l3 3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Import POS CSV</span>
+        </button>
+
+        <!-- Daily Briefing Preview Button -->
+        <button onclick="openLINEModal()" class="px-3 py-1.5 text-xs font-semibold text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl transition-all flex items-center space-x-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          <span>Briefing</span>
+        </button>
+
+        <!-- Branch Selector -->
+        <select id="branchSelector" class="bg-slate-100 text-slate-800 text-xs font-semibold rounded-xl px-3 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#1479ee] cursor-pointer hidden md:block">
+          <option value="siam">Siam Paragon Branch</option>
+          <option value="central">CentralWorld Branch</option>
+          <option value="emquartier">EmQuartier Branch</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="border-t border-blue-50">
+    <div id="navTabs" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-1 overflow-x-auto">
+      <button onclick="switchTab('dashboard')" id="tab-dashboard" class="nav-tab active-nav-tab">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        <span>Dashboard</span>
+      </button>
+      <button onclick="switchTab('predictor')" id="tab-predictor" class="nav-tab">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+        <span>Sales Forecast</span>
+      </button>
+      <button onclick="switchTab('shopping')" id="tab-shopping" class="nav-tab">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        <span>Shopping List</span>
+      </button>
+      <button onclick="switchTab('promo')" id="tab-promo" class="nav-tab">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>Promotions</span>
+      </button>
+      <button onclick="switchTab('inventory')" id="tab-inventory" class="nav-tab">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+        <span>Inventory & Recipes</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+  <!-- ================= TAB 1: EXECUTIVE DASHBOARD ================= -->
+  <section id="view-dashboard" class="space-y-6">
+    <div class="hero flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <h1 class="text-xl font-bold text-slate-900 tracking-tight">Dashboard</h1>
+        <p class="text-xs text-slate-500 mt-0.5">Today’s business health, money saved and ingredients close to expiry.</p>
+      </div>
+      <div class="flex items-center space-x-3">
+        <button onclick="exportSpoilageLogCSV()" class="hero-btn">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Export Spoilage Log CSV</span>
+        </button>
+        <button onclick="refreshDashboardData()" class="hero-btn">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          <span>Sync Data</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Today's to-do -->
+    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-sm font-bold text-slate-900">What to do today</h3>
+        <span class="text-xs font-semibold text-blue-600" id="todoDate"></span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <button onclick="switchTab('promo')" class="todo">
+          <span class="todo-num" style="background:linear-gradient(135deg,#fbbf24,#f59e0b)">1</span>
+          <span class="todo-text"><b>Use up expiring stock</b><small id="todoExpiry">Fresh Milk 2L expires in 24h, Mangoes in 48h.</small></span>
+          <span class="todo-go">→</span>
+        </button>
+        <button onclick="switchTab('predictor')" class="todo">
+          <span class="todo-num">2</span>
+          <span class="todo-text"><b>Check today’s forecast</b><small id="todoForecast">See expected sales for each day.</small></span>
+          <span class="todo-go">→</span>
+        </button>
+        <button onclick="switchTab('shopping')" class="todo">
+          <span class="todo-num" style="background:linear-gradient(135deg,#6fd67a,#34a45a)">3</span>
+          <span class="todo-text"><b>Review what to order</b><small>See suggested quantities for each supplier.</small></span>
+          <span class="todo-go">→</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 4 Key KPI Scorecards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="kpi bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Revenue (Last 28 Days)</span>
+          <div class="p-2 bg-blue-50 text-[#1479ee] rounded-xl">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="text-2xl font-bold text-slate-900" id="kpiRev">฿42,850</div>
+          <div class="flex items-center mt-1 text-xs text-blue-600 font-semibold">
+            <span id="kpiRevSub">↑ +18.4% vs last month</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kpi bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Waste Logged (This Month)</span>
+          <div class="p-2 bg-blue-50 text-blue-600 rounded-xl">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="text-2xl font-bold text-slate-900" id="kpiWaste">34.2%</div>
+          <div class="mt-1 text-xs text-slate-500 font-medium" id="kpiWasteSub">185 kg waste prevented</div>
+        </div>
+      </div>
+
+      <div class="kpi bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Forecast Accuracy</span>
+          <div class="p-2 bg-cyan-50 text-cyan-600 rounded-xl">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="text-2xl font-bold text-slate-900" id="kpiAcc">94.8%</div>
+          <div class="flex items-center mt-1 text-xs text-blue-600 font-semibold">
+            <span id="kpiAccSub">↑ +2.1% vs actual POS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kpi bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Expiry Alert Batches</span>
+          <div class="p-2 bg-amber-50 text-amber-600 rounded-xl">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="text-2xl font-bold text-amber-600" id="kpiExpiryCount">3 Items</div>
+          <div class="mt-1 text-xs text-amber-700 font-medium" id="kpiExpiryValue">฿4,070 value at risk</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Charts Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Forecast vs. Actual Sales (7-Day Trend)</h3>
+            <p class="text-xs text-slate-500">Comparing the forecast with real sales from your POS.</p>
+          </div>
+          <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 shrink-0">
+            <button onclick="toggleChartMode('value')" id="btnChartValue" class="px-2.5 py-1 text-[11px] font-bold rounded-lg transition-all bg-white text-blue-800 shadow-sm">
+              ฿ Revenue Value
+            </button>
+            <button onclick="toggleChartMode('volume')" id="btnChartVolume" class="px-2.5 py-1 text-[11px] font-bold rounded-lg transition-all text-slate-600 hover:text-slate-900">
+              Unit Volume (Pcs)
+            </button>
+          </div>
+        </div>
+        <div class="h-64 w-full">
+          <canvas id="salesChart"></canvas>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-bold text-slate-900">Food Waste Logged</h3>
+            <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">6-Month Trend</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-4">Value of ingredients thrown away, from your Spoilage log (THB).</p>
+          <div class="h-52 w-full">
+            <canvas id="wasteChart"></canvas>
+          </div>
+        </div>
+        <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+          <span>6-Month Total Waste Logged:</span>
+          <span class="font-bold text-slate-900 text-sm" id="wasteTotal">฿219,550</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Urgent Expiry Items Board -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/></svg>
+          <h3 class="text-sm font-bold text-slate-900">Near-Expiry Raw Ingredients</h3>
+        </div>
+        <span class="text-xs text-slate-500 font-medium">Action recommended before store close today</span>
+      </div>
+      <div id="expiryList" class="divide-y divide-slate-100"></div>
+    </div>
+  </section>
+
+  <!-- ================= TAB 2: SALES PREDICTOR ================= -->
+  <section id="view-predictor" class="space-y-6 hidden">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200">
+      <div>
+        <h1 class="text-xl font-bold text-slate-900 tracking-tight">Sales Forecast</h1>
+        <p class="text-xs text-slate-500 mt-0.5">Expected sales for each menu item, based on past sales, the weather and local events.</p>
+      </div>
+    </div>
+
+    <!-- 7-Day Forecast Container -->
+    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-slate-100">
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-blue-600">7-Day Weather, Day Type & Local Event Forecast</h3>
+          <p class="text-xs text-slate-500 mt-0.5" id="currentWeekRangeLabel">Showing: Week 1 of Month (Oct 1 - Oct 7)</p>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+        <!-- TODAY chip: always visible, jumps back to today -->
+        <button id="todayChip" onclick="jumpToToday()" class="today-chip" title="Jump to today">
+          <span class="today-dot"></span>
+          <span id="todayChipText">Today</span>
+          <span class="jump">Back to today →</span>
+        </button>
+        <!-- Full Month Navigators (4 Weeks Cycle) -->
+        <div class="flex items-center space-x-1 bg-slate-100 p-1 rounded-xl border border-slate-200 shrink-0">
+          <button onclick="navigateMonthWeek(-1)" id="btnPrevWeek" class="px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:text-slate-900 rounded-lg transition-all border border-slate-200 bg-white shadow-sm flex items-center space-x-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            <span>Prev Week</span>
+          </button>
+          <span id="weekIndicatorBadge" class="px-2.5 py-1 text-[11px] font-bold text-blue-800 bg-blue-50 rounded-lg">Week 1 / 4</span>
+          <button onclick="navigateMonthWeek(1)" id="btnNextWeek" class="px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:text-slate-900 rounded-lg transition-all border border-slate-200 bg-white shadow-sm flex items-center space-x-1">
+            <span>Next Week</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        </div>
+      </div>
+
+      <!-- 1. FULL DETAILED TOP DAY CARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3" id="weatherTimeline"></div>
+
+      <!-- 1.5 WEATHER REALITY CHECK (today's forecast vs. actual) -->
+      <div id="weatherFeedbackCard"></div>
+
+      <!-- 2. SELECTED DAY DETAILED INSPECTOR CARD WITH EVENT IMAGE & PREP RECOMMENDATIONS -->
+      <div class="detail-card mt-4 p-5 rounded-2xl text-white space-y-4" id="selectedDayDetailCard">
+        <!-- JS dynamically renders selected day rich details here -->
+      </div>
+    </div>
+
+    <!-- Forecast Output Table -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="p-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between gap-3">
+        <div>
+          <h3 class="text-sm font-bold text-slate-900" id="forecastTableHeading">Forecasted Sales for Selected Day</h3>
+          <p class="text-xs text-slate-500">Expected units to sell. Used to work out how much of each ingredient you need.</p>
+        </div>
+        <button onclick="updatePredictions()" class="px-3.5 py-2 text-xs font-bold text-blue-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-xl shadow-sm flex items-center space-x-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          <span>Refresh Forecast</span>
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-100 text-slate-600 font-bold border-b border-slate-200">
+            <tr>
+              <th class="p-3.5 pl-5">Menu Item Name</th>
+              <th class="p-3.5">Category</th>
+              <th class="p-3.5">Event & Impact</th>
+              <th class="p-3.5">Normal Sales</th>
+              <th class="p-3.5">Forecasted Sales</th>
+              <th class="p-3.5">Change vs Normal</th>
+              <th class="p-3.5 pr-5">Stock Status</th>
+            </tr>
+          </thead>
+          <tbody id="predictorTableBody" class="divide-y divide-slate-100 text-slate-700 font-medium"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TAB 3: SMART SHOPPING LIST ================= -->
+  <section id="view-shopping" class="space-y-6 hidden">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200">
+      <div>
+        <h1 class="text-xl font-bold text-slate-900 tracking-tight">Shopping List</h1>
+        <p class="text-xs text-slate-500 mt-0.5">Suggested order quantities by supplier, based on forecast sales and what you have in stock.</p>
+      </div>
+      <div class="flex items-center space-x-3">
+        <button onclick="openAddSupplierModal()" class="px-3 py-1.5 bg-[#1479ee] hover:bg-blue-600 text-white text-xs font-bold rounded-xl shadow-sm flex items-center space-x-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          <span>Add New Supplier</span>
+        </button>
+        <div class="flex items-center space-x-1.5">
+          <label class="text-xs font-bold text-slate-700">Extra Stock Buffer:</label>
+          <select id="safetyStockSelect" onchange="recalculateBOM()" class="bg-white border border-slate-200 text-slate-800 text-xs font-bold rounded-xl px-2.5 py-1.5">
+            <option value="0.10">10% Buffer</option>
+            <option value="0.15" selected>15% Buffer</option>
+            <option value="0.20">20% Buffer</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Supplier Tabs Filter -->
+    <div class="flex items-center space-x-2 border-b border-slate-200 pb-2 overflow-x-auto" id="supplierTabs"></div>
+
+    <!-- Calculated Ingredients Table -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="p-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+        <h3 class="text-sm font-bold text-slate-900" id="supplierTableTitle">Items to Reorder</h3>
+        <button onclick="exportPurchaseOrderCSV()" class="px-3.5 py-1.5 text-xs font-bold text-blue-800 bg-blue-50 border border-blue-200 rounded-xl hover:bg-blue-100 shadow-sm flex items-center space-x-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Export Order CSV</span>
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-100 text-slate-600 font-bold border-b border-slate-200">
+            <tr>
+              <th class="p-3.5 pl-5">Select</th>
+              <th class="p-3.5">Ingredient</th>
+              <th class="p-3.5">Needed</th>
+              <th class="p-3.5">In Stock</th>
+              <th class="p-3.5">Order Qty</th>
+              <th class="p-3.5">Min. Order</th>
+              <th class="p-3.5">Unit Cost</th>
+              <th class="p-3.5">Est. Total Cost</th>
+              <th class="p-3.5 pr-5">Supplier</th>
+            </tr>
+          </thead>
+          <tbody id="bomTableBody" class="divide-y divide-slate-100 text-slate-700 font-medium"></tbody>
+          <tfoot class="bg-slate-50 font-bold text-slate-900 border-t border-slate-200">
+            <tr>
+              <td colspan="7" class="p-3.5 pl-5 text-right">Total Estimated Procurement Cost:</td>
+              <td id="bomTotalCost" class="p-3.5 text-blue-700 text-sm">฿0</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- Supplier PO Text Generator -->
+    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+      <div class="flex items-center justify-between gap-3">
+        <h3 class="text-sm font-bold text-slate-900">Order Message for Supplier</h3>
+        <button onclick="copyPOToClipboard()" class="px-4 py-2 bg-[#1479ee] hover:bg-blue-600 text-white text-xs font-bold rounded-xl shadow flex items-center space-x-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+          <span>Copy Message</span>
+        </button>
+      </div>
+      <textarea id="poMessageArea" readonly rows="7" class="w-full bg-slate-50 text-slate-800 text-xs leading-relaxed p-4 rounded-xl border border-slate-200 focus:outline-none"></textarea>
+    </div>
+  </section>
+
+  <!-- ================= TAB 4: AI CAMPAIGN HUB ================= -->
+  <section id="view-promo" class="space-y-6 hidden">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200">
+      <div>
+        <h1 class="text-xl font-bold text-slate-900 tracking-tight">Promotions</h1>
+        <p class="text-xs text-slate-500 mt-0.5">Turn ingredients that are close to expiry into ready-to-use promotion ideas.</p>
+      </div>
+    </div>
+
+    <!-- Campaign Controls -->
+    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1.5">Ingredients to Use Up</label>
+          <select id="promoFocusItem" class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs font-semibold rounded-xl p-2.5"><option value="auto">All expiring ingredients (auto)</option></select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1.5">Minimum Profit Margin</label>
+          <select id="promoMarginFloor" class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs font-semibold rounded-xl p-2.5">
+            <option value="0.3">Min 30% Margin (Aggressive)</option><option value="0.4">Min 40% Margin</option><option value="0.45" selected>Min 45% Margin (Balanced)</option><option value="0.5">Min 50% Margin (Safe)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1.5">Channel & Language</label>
+          <select id="promoLanguage" class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs font-semibold rounded-xl p-2.5">
+            <option value="English" selected>Social Media & LINE OA (English)</option><option value="Thai">Social Media & LINE OA (ไทย)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="pt-2 flex justify-end">
+        <button onclick="generateAIPromoCampaigns()" id="btnGeneratePromo" class="px-6 py-3 bg-[#1479ee] hover:bg-blue-600 text-white text-xs font-bold rounded-xl shadow-md flex items-center space-x-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <span>Create Promotion Ideas</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Output Generated Cards Container -->
+    <div id="promoResultsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+  </section>
+
+  <!-- ================= TAB 5: INVENTORY & BOM SETUP ================= -->
+  <section id="view-inventory" class="space-y-6 hidden">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200">
+      <div>
+        <h1 class="text-xl font-bold text-slate-900 tracking-tight">Inventory & Recipes</h1>
+        <p class="text-xs text-slate-500 mt-0.5">Manage ingredient stock and menu recipes. Import or export them as CSV files.</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <button onclick="triggerCSVImport('csvInventoryInput')" class="btn-import">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-6m0 0l-3 3m3-3l3 3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Import Inventory CSV</span>
+        </button>
+        <button onclick="exportInventoryCSV()" class="btn-export">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Export Inventory CSV</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Raw Inventory Master Table -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="p-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+        <h3 class="text-sm font-bold text-slate-900">Ingredient Stock</h3>
+        <input type="text" id="inventorySearch" onkeyup="filterInventoryTable()" placeholder="🔍 Search ingredients..." class="bg-white border border-slate-200 text-xs rounded-xl px-3 py-1.5 focus:ring-2 focus:ring-[#1479ee] w-48">
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs" id="inventoryMasterTable">
+          <thead class="bg-slate-100 text-slate-600 font-bold border-b border-slate-200">
+            <tr>
+              <th class="p-3.5 pl-5">SKU Code</th>
+              <th class="p-3.5">Ingredient Name</th>
+              <th class="p-3.5">Use First</th>
+              <th class="p-3.5">In-Stock Qty</th>
+              <th class="p-3.5">Unit Cost</th>
+              <th class="p-3.5">Batch Expiry</th>
+              <th class="p-3.5">Status</th>
+              <th class="p-3.5 pr-5">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="inventoryTableBody" class="divide-y divide-slate-100 text-slate-700 font-medium"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Recipe BOM Breakdown Buttons & Add Menu Action -->
+    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-sm font-bold text-slate-900">Menu Recipes</h3>
+          <p class="text-xs text-slate-500">See what goes into each menu item.</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button onclick="triggerCSVImport('csvMenuInput')" class="btn-import">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-6m0 0l-3 3m3-3l3 3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>Import Menu CSV</span>
+          </button>
+          <button onclick="triggerCSVImport('csvRecipesInput')" class="btn-import">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-6m0 0l-3 3m3-3l3 3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>Import Recipes CSV</span>
+          </button>
+          <button onclick="exportMenuCSV()" class="btn-export">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>Export Menu CSV</span>
+          </button>
+          <button onclick="openAddMenuModal()" class="px-3.5 py-2 bg-[#1479ee] hover:bg-blue-600 text-white text-xs font-bold rounded-xl shadow-sm flex items-center space-x-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            <span>Add New Menu</span>
+          </button>
+        </div>
+      </div>
+      <div id="recipeButtons" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- MODAL: SPOILAGE LOGGING -->
+<div id="spoilageModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-md w-full border border-slate-200 shadow-2xl overflow-hidden">
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-rose-50 text-rose-900">
+      <div class="flex items-center space-x-2">
+        <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        <h3 class="text-sm font-bold">Log Ingredient Spoilage / Waste</h3>
+      </div>
+      <button onclick="closeSpoilageModal()" class="text-slate-400 hover:text-slate-600 font-bold">✕</button>
+    </div>
+    <div class="p-5 space-y-4 text-xs">
+      <input type="hidden" id="spoilageSku">
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Ingredient Name</label>
+        <input type="text" id="spoilageName" readonly class="w-full bg-slate-100 border border-slate-200 text-slate-600 font-semibold rounded-xl p-2.5">
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Quantity Discarded</label>
+          <input type="number" id="spoilageQty" step="0.1" value="5" class="w-full bg-white border border-slate-200 text-slate-900 font-bold rounded-xl p-2.5">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Spoilage Reason</label>
+          <select id="spoilageReason" class="w-full bg-white border border-slate-200 text-slate-900 font-semibold rounded-xl p-2.5">
+            <option value="Spilled / Dropped">Spilled / Dropped Accidental</option>
+            <option value="Refrigerator Failure">Refrigerator Temperature Failure</option>
+            <option value="Expired Shelf Life">Expired Shelf Life</option>
+            <option value="Quality Defect">Quality / Mold Defect</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="p-4 border-t border-slate-200 bg-slate-50 flex justify-end space-x-2">
+      <button onclick="closeSpoilageModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 bg-white border border-slate-200 rounded-xl">Cancel</button>
+      <button onclick="saveSpoilageLog()" class="px-4 py-2 text-xs font-bold text-white bg-rose-600 hover:bg-rose-700 rounded-xl shadow-sm">Confirm Discard & Save Log</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: ADD NEW MENU ITEM -->
+<div id="addMenuModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-xl w-full border border-slate-200 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50 shrink-0">
+      <div class="flex items-center space-x-2">
+        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+        <h3 class="text-sm font-bold text-slate-900">Add New Menu Item</h3>
+      </div>
+      <button onclick="closeAddMenuModal()" class="text-slate-400 hover:text-slate-600 font-bold">✕</button>
+    </div>
+    
+    <div class="p-5 space-y-4 text-xs overflow-y-auto flex-1">
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Menu Name</label>
+        <input type="text" id="newMenuName" placeholder="e.g. Matcha Oat Milk Latte" class="w-full bg-white border border-slate-200 text-slate-900 font-medium rounded-xl p-2.5">
+      </div>
+
+      <div class="grid grid-cols-3 gap-3">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Category</label>
+          <select id="newMenuCategory" class="w-full bg-white border border-slate-200 text-slate-900 font-medium rounded-xl p-2.5">
+            <option value="Beverage">Beverage</option>
+            <option value="Pastry">Pastry</option>
+            <option value="Dessert">Dessert</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Retail Price (฿)</label>
+          <input type="number" id="newMenuPrice" placeholder="85" class="w-full bg-white border border-slate-200 text-slate-900 font-bold rounded-xl p-2.5">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Normal Sales / Day</label>
+          <input type="number" id="newMenuBaseSales" placeholder="50" class="w-full bg-white border border-slate-200 text-slate-900 font-bold rounded-xl p-2.5">
+        </div>
+      </div>
+
+      <div class="pt-3 border-t border-slate-200">
+        <div class="flex items-center justify-between mb-3">
+          <label class="block font-bold text-slate-900 text-xs">Recipe Ingredients</label>
+          <button type="button" onclick="addIngredientRowToAddMenu()" class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-xl flex items-center space-x-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            <span>Add Ingredient</span>
+          </button>
+        </div>
+        <div id="newMenuIngredientsContainer" class="space-y-2"></div>
+      </div>
+    </div>
+
+    <div class="p-4 border-t border-slate-200 bg-slate-50 flex justify-end space-x-2 shrink-0">
+      <button onclick="closeAddMenuModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 bg-white border border-slate-200 rounded-xl">Cancel</button>
+      <button onclick="saveNewMenu()" class="px-4 py-2 text-xs font-bold text-white bg-[#1479ee] hover:bg-blue-600 rounded-xl shadow-sm">Save Menu Item</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: EDIT STOCK QUANTITY -->
+<div id="editStockModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-md w-full border border-slate-200 shadow-2xl overflow-hidden">
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+      <h3 class="text-sm font-bold text-slate-900">Edit Inventory Stock</h3>
+      <button onclick="closeEditStockModal()" class="text-slate-400 font-bold">✕</button>
+    </div>
+    <div class="p-5 space-y-4 text-xs">
+      <input type="hidden" id="editStockSku">
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Ingredient Name</label>
+        <input type="text" id="editStockName" readonly class="w-full bg-slate-100 border border-slate-200 text-slate-600 font-semibold rounded-xl p-2.5">
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">In-Stock Quantity</label>
+          <input type="number" id="editStockQty" step="0.1" class="w-full bg-white border border-slate-200 text-slate-900 font-bold rounded-xl p-2.5">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Unit</label>
+          <input type="text" id="editStockUnit" readonly class="w-full bg-slate-100 border border-slate-200 text-slate-600 font-semibold rounded-xl p-2.5">
+        </div>
+      </div>
+    </div>
+    <div class="p-4 border-t border-slate-200 bg-slate-50 flex justify-end space-x-2">
+      <button onclick="closeEditStockModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 bg-white border border-slate-200 rounded-xl">Cancel</button>
+      <button onclick="saveStockEdit()" class="px-4 py-2 text-xs font-bold text-white bg-[#1479ee] hover:bg-blue-600 rounded-xl">Save Stock Update</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: ADD NEW SUPPLIER -->
+<div id="addSupplierModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-md w-full border border-slate-200 shadow-2xl overflow-hidden">
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+      <h3 class="text-sm font-bold text-slate-900">Add New Supplier / Vendor</h3>
+      <button onclick="closeAddSupplierModal()" class="text-slate-400 font-bold">✕</button>
+    </div>
+    <div class="p-5 space-y-3 text-xs">
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Company / Brand Name</label>
+        <input type="text" id="newSupplierName" placeholder="e.g. Nestlé Professional" class="w-full bg-white border border-slate-200 text-slate-900 font-medium rounded-xl p-2.5">
+      </div>
+    </div>
+    <div class="p-4 border-t border-slate-200 bg-slate-50 flex justify-end space-x-2">
+      <button onclick="closeAddSupplierModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 bg-white border border-slate-200 rounded-xl">Cancel</button>
+      <button onclick="saveNewSupplier()" class="px-4 py-2 text-xs font-bold text-white bg-[#1479ee] hover:bg-blue-600 rounded-xl shadow-sm">Save Supplier</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: AI COPILOT ASSISTANT -->
+<div id="copilotModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-lg w-full border border-slate-200 shadow-2xl overflow-hidden flex flex-col h-[520px]">
+    <div class="p-4 bg-gradient-to-r from-blue-600 to-[#1479ee] text-white flex items-center justify-between shrink-0">
+      <div class="flex items-center space-x-2">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <div>
+          <h3 class="text-sm font-bold">Wasteless Assistant</h3>
+          <p class="text-[10px] text-blue-100">Quick answers for your store</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3"><button onclick="closeCopilotModal()" class="text-white hover:text-slate-200 font-bold">✕</button></div>
+    </div>
+
+    <div id="copilotChatArea" class="p-4 space-y-3 text-xs overflow-y-auto flex-1 bg-slate-50">
+      <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm max-w-[85%] space-y-2">
+        <p class="font-bold text-blue-800">Wasteless Assistant:</p>
+        <p class="text-slate-700">Good day! Here is your quick summary for today:</p>
+        <ul class="list-disc list-inside text-slate-600 space-y-1 pl-1">
+          <li id="copilotExpiry">Fresh Milk 2L expires in 24h (18 bottles remaining).</li>
+          <li id="copilotWeather">Ask me about stock, sales or promotions.</li>
+        </ul>
+        <div class="pt-2 flex flex-wrap gap-2">
+          <button onclick="switchTab('shopping'); closeCopilotModal();" class="px-2.5 py-1.5 bg-blue-50 text-blue-700 font-bold rounded-lg border border-blue-200">Review order list</button>
+          <button onclick="switchTab('promo'); closeCopilotModal();" class="px-2.5 py-1.5 bg-cyan-50 text-cyan-700 font-bold rounded-lg border border-cyan-200">See promotions</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-3 pt-2 bg-white border-t border-slate-200 flex flex-wrap gap-1.5 shrink-0">
+      <button onclick="sendCopilotMsg('What should I order today and why?')" class="px-2.5 py-1 text-[11px] font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-full">What to order today?</button>
+      <button onclick="sendCopilotMsg('How can I use up the ingredients that expire soon?')" class="px-2.5 py-1 text-[11px] font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-full">Use up expiring stock</button>
+      <button onclick="sendCopilotMsg('Which menu items are selling worse than usual?')" class="px-2.5 py-1 text-[11px] font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-full">Slow sellers</button>
+    </div>
+    <div class="p-3 bg-white flex items-center space-x-2 shrink-0">
+      <input type="text" id="copilotInput" onkeypress="if(event.key==='Enter') sendCopilotMsg()" placeholder="Ask a question..." class="flex-1 bg-slate-100 border border-slate-200 text-xs rounded-xl px-3 py-2.5">
+      <button onclick="sendCopilotMsg()" class="px-4 py-2.5 bg-[#1479ee] hover:bg-blue-600 text-white text-xs font-bold rounded-xl shadow-sm">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: DYNAMIC DIGITAL SIGNAGE PREVIEW (TV DISPLAY) -->
+<div id="signageModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+  <div class="bg-slate-900 rounded-3xl max-w-2xl w-full border border-slate-800 shadow-2xl overflow-hidden text-white flex flex-col">
+    <div class="p-4 bg-slate-800 flex items-center justify-between border-b border-slate-700">
+      <h3 class="text-xs font-bold uppercase tracking-wider text-slate-300">In-Store TV Preview</h3>
+      <button onclick="closeSignageModal()" class="text-slate-400 hover:text-white font-bold">✕</button>
+    </div>
+    
+    <div class="p-8 bg-gradient-to-br from-blue-950 via-slate-900 to-cyan-950 text-center space-y-6 relative overflow-hidden">
+      <span class="px-4 py-1.5 bg-amber-500 text-slate-950 font-black text-xs uppercase tracking-widest rounded-full shadow-lg" id="tvBadge">FLASH SALE - TODAY ONLY</span>
+      <h2 id="tvTitle" class="text-3xl font-black text-amber-300 tracking-tight">Thai Milk Tea Shaved Ice<br>with Fresh Mango Dip</h2>
+      <div class="flex justify-center items-center space-x-4">
+        <span id="tvOld" class="text-slate-400 line-through text-lg font-bold">฿119</span>
+        <span id="tvNew" class="text-4xl font-black text-blue-400 animate-pulse">฿79 ONLY!</span>
+      </div>
+    </div>
+    
+    <div class="p-3 bg-slate-800 text-center text-[11px] text-slate-400 border-t border-slate-700">
+      Now showing on the branch TV
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: DAILY BRIEFING PREVIEW -->
+<div id="lineModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-md w-full border border-slate-200 shadow-2xl overflow-hidden">
+    <div class="p-4 bg-[#1479ee] text-white flex items-center justify-between">
+      <h3 class="text-sm font-bold">Store Manager Briefing</h3>
+      <button onclick="closeLINEModal()" class="text-white font-bold">✕</button>
+    </div>
+    <div class="p-5 space-y-3 bg-slate-100 text-xs">
+      <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 space-y-2">
+        <p class="font-bold text-blue-800 text-sm">Wasteless Morning Briefing</p>
+        <p><strong>Today's Weather:</strong> Hot & Sunny (35°C) - Cold beverage demand expected +20%.</p>
+        <p><strong>Expiry Risk:</strong> <span id="lineExpiry">Fresh Milk 2L expiring in 24h.</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: RECIPE BOM BREAKDOWN -->
+<div id="recipeModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-lg w-full border border-slate-200 shadow-2xl overflow-hidden">
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+      <h3 id="recipeModalTitle" class="text-sm font-bold text-slate-900">Recipe Breakdown</h3>
+      <button onclick="closeRecipeModal()" class="text-slate-400 font-bold">✕</button>
+    </div>
+    <div class="p-5 space-y-4">
+      <div class="bg-blue-50 p-3 rounded-xl border border-blue-200 text-xs text-slate-700 flex justify-between font-medium">
+        <span>Retail Menu Price: <strong class="text-slate-900 font-bold" id="recipePrice">-</strong></span>
+        <span>Ingredient Cost: <strong class="text-blue-700 font-bold" id="recipeCogs">-</strong></span>
+      </div>
+      <table class="w-full text-left text-xs">
+        <thead class="bg-slate-100 text-slate-600 font-bold">
+          <tr><th class="p-2.5">Ingredient</th><th class="p-2.5">Qty / Serving</th><th class="p-2.5">Est. Cost</th></tr>
+        </thead>
+        <tbody id="recipeModalBody" class="divide-y divide-slate-100 text-slate-700"></tbody>
+      </table>
+    </div>
+    <div class="p-4 border-t border-slate-200 bg-slate-50 flex justify-end">
+      <button onclick="closeRecipeModal()" class="px-4 py-2 text-xs font-bold text-slate-700 bg-white border border-slate-200 rounded-xl">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none"></div>
+
+<script>
+// INITIAL STATE DATA
+// One-time reset of inventory/menu/recipes saved by the older CSV importer
+if (localStorage.getItem('wasteless_schema') !== '2') {
+  ['wasteless_inventory', 'wasteless_menu', 'wasteless_recipes'].forEach(k => localStorage.removeItem(k));
+  localStorage.setItem('wasteless_schema', '2');
+}
+let rawIngredients = JSON.parse(localStorage.getItem('wasteless_inventory')) || [
+  { sku: 'ING-001', name: 'Pasteurised Fresh Milk 2L', category: 'Dairy', unit: 'Bottle', inStock: 18, unitCost: 100, expiry: '2026-10-16', status: 'Critical', perUnitNeed: { 1: 0.05, 2: 0.075 }, supplier: 'CP Freshmart', moq: 10, batchOrder: 'Batch #20261011 (Oldest)' },
+  { sku: 'ING-002', name: 'Thai Tea Leaf Mix', category: 'Dry Goods', unit: 'kg', inStock: 12, unitCost: 320, expiry: '2026-11-15', status: 'Good', perUnitNeed: { 1: 0.015 }, supplier: 'ChaTraMue Official', moq: 5, batchOrder: 'Batch #20260901' },
+  { sku: 'ING-003', name: 'Ripe Nam Dok Mai Mangoes', category: 'Produce', unit: 'kg', inStock: 12.5, unitCost: 100, expiry: '2026-10-17', status: 'Warning', perUnitNeed: { 3: 0.15 }, supplier: 'Talat Thai Fruit', moq: 10, batchOrder: 'Batch #20261009 (Oldest)' },
+  { sku: 'ING-004', name: 'Heavy Whipping Cream 1L', category: 'Dairy', unit: 'Pack', inStock: 6, unitCost: 170, expiry: '2026-10-18', status: 'Warning', perUnitNeed: { 1: 0.02, 3: 0.08 }, supplier: 'CP Freshmart', moq: 6, batchOrder: 'Batch #20261010' }
+];
+
+let menuItems = JSON.parse(localStorage.getItem('wasteless_menu')) || [
+  { id: 1, name: 'Thai Milk Tea (Cold)', category: 'Beverage', baseSales: 120, weatherSens: 'hot', price: 65, cogs: 18.50, trend7d: [110, 115, 90, 105, 130, 145, 140] },
+  { id: 2, name: 'Espresso Latte (Hot/Iced)', category: 'Beverage', baseSales: 85, weatherSens: 'neutral', price: 75, cogs: 21.00, trend7d: [80, 85, 95, 88, 90, 100, 95] },
+  { id: 3, name: 'Fresh Mango Cake Slice', category: 'Dessert', baseSales: 40, weatherSens: 'hot', price: 95, cogs: 31.10, trend7d: [38, 40, 30, 35, 42, 55, 50] }
+];
+
+let recipes = JSON.parse(localStorage.getItem('wasteless_recipes')) || {
+  'Thai Milk Tea (Cold)': [
+    { name: 'Pasteurised Fresh Milk 2L', qty: '100 ml', cost: '฿5.00' },
+    { name: 'Thai Tea Leaf Mix', qty: '15 g', cost: '฿4.80' }
+  ],
+  'Espresso Latte (Hot/Iced)': [
+    { name: 'Pasteurised Fresh Milk 2L', qty: '150 ml', cost: '฿7.50' }
+  ],
+  'Fresh Mango Cake Slice': [
+    { name: 'Ripe Nam Dok Mai Mangoes', qty: '150 g', cost: '฿15.00' },
+    { name: 'Heavy Whipping Cream 1L', qty: '80 ml', cost: '฿13.60' }
+  ]
+};
+
+let spoilageLogs = JSON.parse(localStorage.getItem('wasteless_spoilage_logs')) || [
+  { timestamp: '2026-10-10 09:30', sku: 'ING-001', name: 'Pasteurised Fresh Milk 2L', qty: 2, unit: 'Bottle', reason: 'Spilled / Dropped Accidental' }
+];
+
+const customSuppliers = ['CP Freshmart', 'ChaTraMue Official', 'Talat Thai Fruit', 'Northern Roast', 'BakeCraft'];
+let currentSupplierFilter = 'All';
+
+// FULL MONTH ENGINE (4 WEEKS DATA STRUCTURE WITH RICH EVENT IMAGES & DETAILS)
+let currentMonthWeekIndex = 0; // 0..3 (Week 1 to Week 4)
+let selectedDayIndex = 0;
+
+const fullMonthForecast = [
+  {
+    weekTitle: "Week 1 of Month (Oct 1 - Oct 7)",
+    days: [
+      { dayName: 'Thu', dateStr: 'Oct 1', weather: 'sunny', temp: '34°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Regular Trading Day', isEvent: false, trafficImpact: '+0%', multiplier: 1.0, eventImg: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80', eventDesc: 'Standard weekday business flow. Steady office worker footfall during morning & lunch peaks.' },
+      { dayName: 'Fri', dateStr: 'Oct 2', weather: 'sunny', temp: '35°C', dayType: 'Weekday', dayTypeBadge: 'bg-indigo-900 text-indigo-200 border-indigo-700', event: 'TGIF Evening Rush', isEvent: true, trafficImpact: '+15%', multiplier: 1.15, eventImg: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80', eventDesc: 'Friday evening surge expected. High demand for cold beverages and desserts after 5 PM.' },
+      { dayName: 'Sat', dateStr: 'Oct 3', weather: 'sunny', temp: '36°C', dayType: 'Weekend', dayTypeBadge: 'bg-blue-900 text-blue-200 border-blue-700', event: 'Siam Square Walking Street', isEvent: true, trafficImpact: '+25%', multiplier: 1.25, eventImg: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80', eventDesc: 'High pedestrian traffic due to street fair. Prep +25% iced milk tea & mango slices.' },
+      { dayName: 'Sun', dateStr: 'Oct 4', weather: 'sunny', temp: '35°C', dayType: 'Weekend', dayTypeBadge: 'bg-blue-900 text-blue-200 border-blue-700', event: 'Family Dining Weekend Peak', isEvent: true, trafficImpact: '+30%', multiplier: 1.30, eventImg: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80', eventDesc: 'Peak weekend family visits in Paragon. High dessert cake slice volume expected.' },
+      { dayName: 'Mon', dateStr: 'Oct 5', weather: 'sunny', temp: '33°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Regular Office Traffic', isEvent: false, trafficImpact: '+0%', multiplier: 1.0, eventImg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80', eventDesc: 'Monday office coffee rush between 8:00 - 10:30 AM.' },
+      { dayName: 'Tue', dateStr: 'Oct 6', weather: 'rainy', temp: '29°C', dayType: 'Weekday', dayTypeBadge: 'bg-sky-900 text-sky-200 border-sky-700', event: 'Heavy Rain / Delivery Surge', isEvent: false, trafficImpact: '-10%', multiplier: 0.90, eventImg: 'https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=600&q=80', eventDesc: 'Rainy afternoon. In-store walk-ins down 10%, but GrabFood / LINEMAN delivery orders +30%.' },
+      { dayName: 'Wed', dateStr: 'Oct 7', weather: 'sunny', temp: '32°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Mid-week Lunch Rush', isEvent: true, trafficImpact: '+5%', multiplier: 1.05, eventImg: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80', eventDesc: 'Mid-week lunch spike. Fast beverage prep recommended.' }
+    ]
+  },
+  {
+    weekTitle: "Week 2 of Month (Oct 8 - Oct 14)",
+    days: [
+      { dayName: 'Thu', dateStr: 'Oct 8', weather: 'sunny', temp: '34°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Regular Trading Day', isEvent: false, trafficImpact: '+0%', multiplier: 1.0, eventImg: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80', eventDesc: 'Standard business flow across all beverage lines.' },
+      { dayName: 'Fri', dateStr: 'Oct 9', weather: 'sunny', temp: '35°C', dayType: 'Weekday', dayTypeBadge: 'bg-indigo-900 text-indigo-200 border-indigo-700', event: 'Weekend Expo Setup Day', isEvent: true, trafficImpact: '+10%', multiplier: 1.10, eventImg: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80', eventDesc: 'Expo staff & setup crews in Paragon Hall driving early coffee orders.' },
+      { dayName: 'Sat', dateStr: 'Oct 10', weather: 'sunny', temp: '36°C', dayType: 'Weekend', dayTypeBadge: 'bg-cyan-900 text-cyan-200 border-cyan-700', event: 'Siam Music Fest 2026', isEvent: true, trafficImpact: '+35%', multiplier: 1.35, eventImg: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80', eventDesc: 'Huge music festival nearby! High demand for cold drinks & ice refills all day.' },
+      { dayName: 'Sun', dateStr: 'Oct 11', weather: 'sunny', temp: '35°C', dayType: 'Weekend', dayTypeBadge: 'bg-cyan-900 text-cyan-200 border-cyan-700', event: 'Siam Music Fest 2026', isEvent: true, trafficImpact: '+40%', multiplier: 1.40, eventImg: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80', eventDesc: 'Final day of Siam Music Fest. Maximum capacity expected. Prepare max milk tea batches!' },
+      { dayName: 'Mon', dateStr: 'Oct 12', weather: 'sunny', temp: '34°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Regular Office Traffic', isEvent: false, trafficImpact: '+0%', multiplier: 1.0, eventImg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80', eventDesc: 'Normal weekday morning coffee traffic.' },
+      { dayName: 'Tue', dateStr: 'Oct 13', weather: 'sunny', temp: '35°C', dayType: 'Festival', dayTypeBadge: 'bg-amber-900 text-amber-200 border-amber-700', event: 'Memorial Day Holiday', isEvent: true, trafficImpact: '+30%', multiplier: 1.30, eventImg: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80', eventDesc: 'Public holiday. High mall family traffic expected.' },
+      { dayName: 'Wed', dateStr: 'Oct 14', weather: 'rainy', temp: '28°C', dayType: 'Weekday', dayTypeBadge: 'bg-sky-900 text-sky-200 border-sky-700', event: 'Thunderstorm Afternoon', isEvent: false, trafficImpact: '-15%', multiplier: 0.85, eventImg: 'https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=600&q=80', eventDesc: 'Thunderstorms expected around 2-5 PM.' }
+    ]
+  },
+  {
+    weekTitle: "Week 3 of Month (Oct 15 - Oct 21)",
+    days: [
+      { dayName: 'Thu', dateStr: 'Oct 15', weather: 'rainy', temp: '30°C', dayType: 'Weekday', dayTypeBadge: 'bg-sky-900 text-sky-200 border-sky-700', event: 'Light Rain Shower', isEvent: false, trafficImpact: '-5%', multiplier: 0.95, eventImg: 'https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=600&q=80', eventDesc: 'Overcast with light showers.' },
+      { dayName: 'Fri', dateStr: 'Oct 16', weather: 'sunny', temp: '33°C', dayType: 'Weekday', dayTypeBadge: 'bg-indigo-900 text-indigo-200 border-indigo-700', event: 'Friday Night Market', isEvent: true, trafficImpact: '+20%', multiplier: 1.20, eventImg: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80', eventDesc: 'Night market opens. Evening crowd surge after 6 PM.' },
+      { dayName: 'Sat', dateStr: 'Oct 17', weather: 'sunny', temp: '35°C', dayType: 'Weekend', dayTypeBadge: 'bg-blue-900 text-blue-200 border-blue-700', event: 'Siam Paragon Sales Fair', isEvent: true, trafficImpact: '+25%', multiplier: 1.25, eventImg: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80', eventDesc: 'Grand sales event in mall. High footfall in food court.' },
+      { dayName: 'Sun', dateStr: 'Oct 18', weather: 'sunny', temp: '34°C', dayType: 'Weekend', dayTypeBadge: 'bg-blue-900 text-blue-200 border-blue-700', event: 'Siam Paragon Sales Fair', isEvent: true, trafficImpact: '+25%', multiplier: 1.25, eventImg: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80', eventDesc: 'Sales fair Day 2. Strong pastry and coffee demand.' },
+      { dayName: 'Mon', dateStr: 'Oct 19', weather: 'sunny', temp: '33°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Corporate Catering Peak', isEvent: true, trafficImpact: '+10%', multiplier: 1.10, eventImg: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80', eventDesc: 'Pre-ordered corporate coffee boxes for office delivery.' },
+      { dayName: 'Tue', dateStr: 'Oct 20', weather: 'cloudy', temp: '32°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Regular Trading Day', isEvent: false, trafficImpact: '+0%', multiplier: 1.0, eventImg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80', eventDesc: 'Normal weekday trading pattern.' },
+      { dayName: 'Wed', dateStr: 'Oct 21', weather: 'sunny', temp: '33°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Mid-week Lunch Rush', isEvent: true, trafficImpact: '+5%', multiplier: 1.05, eventImg: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80', eventDesc: 'Regular mid-week lunch crowd.' }
+    ]
+  },
+  {
+    weekTitle: "Week 4 of Month (Oct 22 - Oct 28)",
+    days: [
+      { dayName: 'Thu', dateStr: 'Oct 22', weather: 'sunny', temp: '34°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Pre-Holiday Shoppers', isEvent: true, trafficImpact: '+15%', multiplier: 1.15, eventImg: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=600&q=80', eventDesc: 'Pre-holiday evening shopping rush.' },
+      { dayName: 'Fri', dateStr: 'Oct 23', weather: 'sunny', temp: '35°C', dayType: 'Festival', dayTypeBadge: 'bg-amber-900 text-amber-200 border-amber-700', event: 'Chulalongkorn Day Holiday', isEvent: true, trafficImpact: '+40%', multiplier: 1.40, eventImg: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80', eventDesc: 'National holiday long weekend begins! Expect huge crowds.' },
+      { dayName: 'Sat', dateStr: 'Oct 24', weather: 'sunny', temp: '35°C', dayType: 'Weekend', dayTypeBadge: 'bg-amber-900 text-amber-200 border-amber-700', event: 'Long Weekend Holiday Surge', isEvent: true, trafficImpact: '+35%', multiplier: 1.35, eventImg: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80', eventDesc: 'Long weekend day 2. High turnover for iced drinks.' },
+      { dayName: 'Sun', dateStr: 'Oct 25', weather: 'sunny', temp: '34°C', dayType: 'Weekend', dayTypeBadge: 'bg-amber-900 text-amber-200 border-amber-700', event: 'Long Weekend Holiday Surge', isEvent: true, trafficImpact: '+30%', multiplier: 1.30, eventImg: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80', eventDesc: 'Long weekend final day. Prepare sufficient fresh milk.' },
+      { dayName: 'Mon', dateStr: 'Oct 26', weather: 'sunny', temp: '32°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Regular Office Traffic', isEvent: false, trafficImpact: '+0%', multiplier: 1.0, eventImg: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80', eventDesc: 'Post-long weekend recovery day.' },
+      { dayName: 'Tue', dateStr: 'Oct 27', weather: 'sunny', temp: '33°C', dayType: 'Weekday', dayTypeBadge: 'bg-slate-700 text-slate-200 border-slate-600', event: 'Regular Trading Day', isEvent: false, trafficImpact: '+0%', multiplier: 1.0, eventImg: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80', eventDesc: 'Standard weekday operations.' },
+      { dayName: 'Wed', dateStr: 'Oct 28', weather: 'cloudy', temp: '31°C', dayType: 'Weekday', dayTypeBadge: 'bg-cyan-900 text-cyan-200 border-cyan-700', event: 'Month-end Promotion Launch', isEvent: true, trafficImpact: '+20%', multiplier: 1.20, eventImg: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80', eventDesc: 'Payday & month-end promotion campaign active.' }
+    ]
+  }
+];
+
+let chartDisplayMode = 'value';
+let salesChartInstance = null;
+let wasteChartInstance = null;
+
+// Local CSV Import/Export Helpers
+function exportArrayToCSV(arrayData, defaultFilename) {
+  if (!arrayData || arrayData.length === 0) { showToast('⚠️ No data available to export.'); return; }
+  const csvString = Papa.unparse(arrayData);
+  const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = defaultFilename;
+  link.click();
+  showToast(`Exported ${defaultFilename}!`);
+}
+
+function triggerCSVImport(inputId) { const el = document.getElementById(inputId); el.value = ''; el.click(); }
+
+// ===== CSV IMPORT: maps CSV columns to app fields + validates rows =====
+let recipeRows = JSON.parse(localStorage.getItem('wasteless_recipe_rows') || '[]');
+let posSummary = JSON.parse(localStorage.getItem('wasteless_pos_summary') || 'null');
+
+const num = v => (v === undefined || v === null || String(v).trim() === '') ? NaN : Number(v);
+const q = v => (v === undefined || v === null) ? '' : v;
+const todayStr = () => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+
+function dateIssue(v) {
+  v = q(v).trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return `"${v}" bad format (use YYYY-MM-DD)`;
+  const [y, m, d] = v.split('-').map(Number), t = new Date(y, m - 1, d);
+  if (t.getFullYear() !== y || t.getMonth() !== m - 1 || t.getDate() !== d) return `"${v}" is not a real date`;
+  if (y >= 2500) return `year ${y} looks like Buddhist Era (subtract 543)`;
+  if (y < 2000) return `year ${y} is out of range`;
+  return '';
+}
+
+function statusFromExpiry(v) {
+  const days = Math.round((new Date(v + 'T00:00:00') - new Date(todayStr() + 'T00:00:00')) / 864e5);
+  return days <= 0 ? 'Critical' : (days <= 3 ? 'Warning' : 'Good');
+}
+
+function rebuildRecipeLinks() {
+  if (!recipeRows.length) return;
+  const menuById = {}, ingBySku = {};
+  menuItems.forEach(m => menuById[m.id] = m);
+  rawIngredients.forEach(i => { ingBySku[i.sku] = i; i.perUnitNeed = {}; });
+  recipes = {};
+  recipeRows.forEach(r => {
+    const ing = ingBySku[r.sku], m = menuById[r.menu_id];
+    if (!ing || !m) return;
+    ing.perUnitNeed[m.id] = r.qty_per_serving;
+    (recipes[m.name] = recipes[m.name] || []).push({
+      name: ing.name,
+      qty: r.display_qty || `${r.qty_per_serving} ${ing.unit}`,
+      cost: '฿' + (r.qty_per_serving * ing.unitCost).toFixed(2)
+    });
+  });
+}
+
+// Forecast base = average daily qty over the last 28 days of POS data
+function applyPOSToMenu() {
+  if (!posSummary) return;
+  menuItems.forEach(m => {
+    if (posSummary.avg[m.id]) m.baseSales = posSummary.avg[m.id];
+    if (posSummary.trend[m.id]) m.trend7d = posSummary.trend[m.id];
+  });
+}
+
+function saveImportState() {
+  localStorage.setItem('wasteless_recipe_rows', JSON.stringify(recipeRows));
+  localStorage.setItem('wasteless_pos_summary', JSON.stringify(posSummary));
+}
+
+function refreshAfterImport() {
+  if (currentSupplierFilter !== 'All' && !rawIngredients.some(i => i.supplier === currentSupplierFilter)) currentSupplierFilter = 'All';
+  renderInventoryTable();
+  renderSupplierTabs();
+  recalculateBOM();
+  updatePredictions();
+  renderDashboard();
+}
+
+const IMPORT_SPECS = {
+  inventory: {
+    label: 'ingredients',
+    required: ['sku', 'name', 'unit', 'in_stock', 'unit_cost', 'expiry'],
+    check(r, seen) {
+      const e = [];
+      if (!r.sku) e.push('sku | missing');
+      else if (seen.has(r.sku)) e.push(`sku | ${r.sku} duplicated`);
+      else seen.add(r.sku);
+      if (!r.name) e.push('name | missing');
+      if (!(num(r.in_stock) >= 0)) e.push(`in_stock | "${q(r.in_stock)}" must be a number ≥ 0`);
+      if (!(num(r.unit_cost) > 0)) e.push(`unit_cost | "${q(r.unit_cost)}" must be a number > 0`);
+      const di = dateIssue(r.expiry); if (di) e.push('expiry | ' + di);
+      return e;
+    },
+    apply(rows) {
+      const oldNeed = {};
+      rawIngredients.forEach(i => oldNeed[i.sku] = i.perUnitNeed);
+      rawIngredients = rows.map(r => ({
+        sku: r.sku.trim(), name: r.name.trim(), category: q(r.category), unit: q(r.unit).trim(),
+        inStock: num(r.in_stock), unitCost: num(r.unit_cost), expiry: r.expiry.trim(),
+        status: statusFromExpiry(r.expiry.trim()), perUnitNeed: oldNeed[r.sku] || {},
+        supplier: r.supplier || 'Vendor', moq: num(r.moq) || 1, minStock: num(r.min_stock) || 0,
+        batchOrder: r.batch || 'Batch #1'
+      }));
+      rebuildRecipeLinks();
+    }
+  },
+  menu: {
+    label: 'menu items',
+    required: ['id', 'name', 'price', 'cogs', 'base_sales'],
+    check(r, seen) {
+      const e = [], id = num(r.id);
+      if (!Number.isInteger(id) || id <= 0) e.push(`id | "${q(r.id)}" must be a whole number > 0`);
+      else if (seen.has(id)) e.push(`id | ${id} duplicated`);
+      else seen.add(id);
+      if (!r.name) e.push('name | missing');
+      if (!(num(r.price) > 0)) e.push(`price | "${q(r.price)}" must be a number > 0`);
+      if (!(num(r.cogs) >= 0)) e.push(`cogs | "${q(r.cogs)}" must be a number ≥ 0`);
+      if (!(num(r.base_sales) >= 0)) e.push(`base_sales | "${q(r.base_sales)}" must be a number ≥ 0`);
+      return e;
+    },
+    apply(rows) {
+      menuItems = rows.map(r => ({
+        id: num(r.id), name: r.name.trim(), category: q(r.category), price: num(r.price), cogs: num(r.cogs),
+        baseSales: num(r.base_sales), weatherSens: r.weather_sensitivity || 'neutral', trend7d: []
+      }));
+      rebuildRecipeLinks();
+      applyPOSToMenu();
+    }
+  },
+  recipes: {
+    label: 'recipe lines',
+    required: ['menu_id', 'sku', 'qty_per_serving'],
+    check(r, seen) {
+      const e = [], id = num(r.menu_id);
+      if (!menuItems.some(m => m.id === id)) e.push(`menu_id | ${q(r.menu_id)} not found in menu (import menu.csv first)`);
+      if (!rawIngredients.some(i => i.sku === r.sku)) e.push(`sku | ${q(r.sku)} not found in inventory (import inventory.csv first)`);
+      if (!(num(r.qty_per_serving) > 0)) e.push(`qty_per_serving | "${q(r.qty_per_serving)}" must be a number > 0`);
+      const k = id + '|' + r.sku;
+      if (seen.has(k)) e.push('menu_id + sku | duplicated'); else seen.add(k);
+      return e;
+    },
+    apply(rows) {
+      recipeRows = rows.map(r => ({ menu_id: num(r.menu_id), sku: r.sku, qty_per_serving: num(r.qty_per_serving), display_qty: q(r.display_qty) }));
+      rebuildRecipeLinks();
+    }
+  },
+  pos: {
+    label: 'POS rows',
+    required: ['date', 'menu_id', 'qty', 'unit_price', 'revenue'],
+    check(r, seen) {
+      const e = [], di = dateIssue(r.date), id = num(r.menu_id), qty = num(r.qty), p = num(r.unit_price), rev = num(r.revenue);
+      if (di) e.push('date | ' + di);
+      else if (r.date.trim() > todayStr()) e.push(`date | ${r.date} is in the future`);
+      if (!menuItems.some(m => m.id === id)) e.push(`menu_id | ${q(r.menu_id)} not found in menu (import menu.csv first)`);
+      const qtyOk = Number.isInteger(qty) && qty > 0;
+      if (!qtyOk) e.push(`qty | "${q(r.qty)}" must be a whole number > 0`);
+      if (!(p > 0)) e.push(`unit_price | "${q(r.unit_price)}" must be a number > 0`);
+      if (qtyOk && p > 0 && rev !== qty * p) e.push(`revenue | ${q(r.revenue)} does not match ${qty} × ${p} = ${qty * p}`);
+      const k = q(r.date).trim() + '|' + id;
+      if (seen.has(k)) e.push('date + menu_id | duplicated'); else seen.add(k);
+      return e;
+    },
+    apply(rows) {
+      const byDate = {};
+      rows.forEach(r => { const d = r.date.trim(), id = num(r.menu_id); byDate[d] = byDate[d] || {}; byDate[d][id] = (byDate[d][id] || 0) + num(r.qty); });
+      const dates = Object.keys(byDate).sort(), last = dates.slice(-28), avg = {}, trend = {};
+      menuItems.forEach(m => {
+        const sum = last.reduce((s, d) => s + (byDate[d][m.id] || 0), 0);
+        if (sum > 0) avg[m.id] = Math.round(sum / last.length);
+        trend[m.id] = dates.slice(-7).map(d => byDate[d][m.id] || 0);
+      });
+      const rev = {}, price = {};
+      menuItems.forEach(m => price[m.id] = m.price);
+      rows.forEach(r => { const d = r.date.trim(); rev[d] = (rev[d] || 0) + num(r.revenue); });
+      const sumRev = ds => ds.reduce((t, d) => t + rev[d], 0);
+      const week = dates.slice(-7).map(d => {
+        const prev = dates.filter(x => x < d).slice(-28);
+        let fq = 0, fr = 0, aq = 0;
+        Object.keys(byDate[d]).forEach(id => aq += byDate[d][id]);
+        menuItems.forEach(m => { const a = prev.length ? prev.reduce((t, x) => t + (byDate[x][m.id] || 0), 0) / prev.length : 0; fq += a; fr += a * m.price; });
+        return { date: d, aq, ar: rev[d], fq: Math.round(fq), fr: Math.round(fr) };
+      });
+      posSummary = { rows: rows.length, from: dates[0], to: dates[dates.length - 1], days: last.length, avg, trend, week, rev28: sumRev(last), prev28: sumRev(dates.slice(-56, -28)) };
+      applyPOSToMenu();
+    }
+  }
+};
+
+function showImportReport(title, summary, errs, onOk, okLabel) {
+  const old = document.getElementById('importReport'); if (old) old.remove();
+  const d = document.createElement('div');
+  d.id = 'importReport';
+  d.className = 'fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/50';
+  d.innerHTML = '<div class="bg-white rounded-2xl shadow-xl w-full max-w-xl max-h-[80vh] flex flex-col"><div class="p-4 border-b border-slate-200"><h3 class="text-sm font-bold text-slate-900"></h3><p class="text-xs text-slate-600 mt-1"></p></div><div class="p-4 overflow-y-auto text-xs font-mono text-slate-700 space-y-1 flex-1"></div><div class="p-4 border-t border-slate-200 flex justify-end gap-2"><button class="px-3.5 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50">Cancel</button><button class="px-3.5 py-2 text-xs font-bold rounded-xl bg-[#1479ee] text-white hover:bg-blue-600"></button></div></div>';
+  const box = d.firstChild, list = box.children[1], btns = box.querySelectorAll('button');
+  box.querySelector('h3').textContent = title;
+  box.querySelector('p').textContent = summary;
+  errs.slice(0, 50).concat(errs.length > 50 ? [`... and ${errs.length - 50} more`] : []).forEach(t => {
+    const row = document.createElement('div'); row.textContent = t; list.appendChild(row);
+  });
+  btns[0].onclick = () => d.remove();
+  if (onOk) { btns[1].textContent = okLabel; btns[1].onclick = () => { d.remove(); onOk(); }; }
+  else btns[1].remove();
+  document.body.appendChild(d);
+}
+
+function runImport(event, kind) {
+  const spec = IMPORT_SPECS[kind], file = event.target.files[0];
+  if (!file) return;
+  Papa.parse(file, {
+    header: true, skipEmptyLines: true, transformHeader: h => h.trim(),
+    complete: res => {
+      const missing = spec.required.filter(c => !(res.meta.fields || []).includes(c));
+      if (missing.length || !res.data.length) {
+        showImportReport(`${file.name}: cannot import`, 'Nothing was changed.',
+          [missing.length ? `Missing column(s): ${missing.join(', ')}` : 'The file has no data rows.']);
+        return;
+      }
+      const errs = [], good = [], seen = new Set();
+      res.data.forEach((r, i) => {
+        const e = spec.check(r, seen);
+        if (e.length) e.forEach(m => errs.push(`Line ${i + 2} | ${m}`)); else good.push(r);
+      });
+      const finish = () => {
+        spec.apply(good);
+        saveStateToLocalStorage(); saveImportState(); refreshAfterImport();
+        showToast(`Imported ${good.length} of ${res.data.length} ${spec.label}!` + (errs.length ? ` (${res.data.length - good.length} bad rows skipped)` : ''));
+      };
+      if (!errs.length) { finish(); return; }
+      showImportReport(`${file.name}: ${errs.length} problem(s) found`,
+        `${good.length} of ${res.data.length} rows are valid. Bad rows are skipped if you continue.`,
+        errs, good.length ? finish : null, `Import ${good.length} valid rows`);
+    }
+  });
+}
+
+function importInventoryCSV(e) { runImport(e, 'inventory'); }
+function importMenuCSV(e) { runImport(e, 'menu'); }
+function importRecipesCSV(e) { runImport(e, 'recipes'); }
+function importPOSCSV(e) { runImport(e, 'pos'); }
+
+// ===== DASHBOARD: every number below is computed from the imported data =====
+function dashSeries(mode) {
+  const w = posSummary && posSummary.week;
+  if (!w) return mode === 'value'
+    ? [[24700, 26650, 20150, null, null, null, null], [24375, 26325, 20475, 25350, 33150, 37700, 35750]]
+    : [[380, 410, 310, null, null, null, null], [375, 405, 315, 390, 510, 580, 550]];
+  return mode === 'value' ? [w.map(x => x.ar), w.map(x => x.fr)] : [w.map(x => x.aq), w.map(x => x.fq)];
+}
+
+function renderDashboard() {
+  promoControls();
+  try {
+    const wd = fullMonthForecast[currentMonthWeekIndex].days[selectedDayIndex], wp = Math.round((adjustedMultiplier(wd) - 1) * 100);
+    const wel = document.getElementById('copilotWeather');
+    if (wel) wel.textContent = `${wd.dayName} ${wd.dateStr}: ${WEATHER_LABEL[wd.weather]} ${wd.temp}, ${wp >= 0 ? '+' : ''}${wp}% sales vs normal.`;
+  } catch (e) {}
+  if (window._promos) generateAIPromoCampaigns();
+  const $ = id => document.getElementById(id), fmt = n => '฿' + Math.round(n).toLocaleString();
+  const set = (id, t) => { const e = $(id); if (e) e.textContent = t; };
+  const today = new Date(todayStr() + 'T00:00:00');
+  const dLeft = i => Math.round((new Date(i.expiry + 'T00:00:00') - today) / 864e5);
+  const when = d => d < 0 ? 'expired' : d === 0 ? 'expires today' : `expires in ${d * 24}h`;
+  const tag = d => d < 0 ? 'EXPIRED' : d === 0 ? 'EXPIRES TODAY' : `EXPIRES ${d * 24}H`;
+
+  // Near-expiry (3 days or less)
+  const risk = rawIngredients.map(i => ({ i, d: dLeft(i), v: i.inStock * i.unitCost }))
+    .filter(x => x.d <= 3).sort((a, b) => a.d - b.d || b.v - a.v);
+  set('kpiExpiryCount', risk.length + ' Items');
+  set('kpiExpiryValue', fmt(risk.reduce((s, x) => s + x.v, 0)) + ' value at risk');
+  set('todoExpiry', risk.length ? risk.slice(0, 2).map(x => `${x.i.name} ${when(x.d)}`).join(', ') + '.' : 'Nothing is close to expiry.');
+  if (risk.length) {
+    const t = risk[0];
+    set('pvAlertText', `${t.i.name} · ${t.i.inStock} ${t.i.unit} · ${when(t.d)}`);
+    set('copilotExpiry', `${t.i.name} ${when(t.d)} (${t.i.inStock} ${t.i.unit} remaining).`);
+    set('lineExpiry', `${t.i.name} ${when(t.d)}.`);
+  }
+  $('expiryList').innerHTML = risk.length ? risk.slice(0, 6).map(({ i, d, v }) => `
+    <div class="p-4 flex flex-col lg:flex-row lg:items-center justify-between gap-4 hover:bg-amber-50/30 transition-colors">
+      <div class="flex items-start space-x-3">
+        <div class="p-2 ${d <= 1 ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-800'} rounded-xl text-xs font-bold shrink-0">${tag(d)}</div>
+        <div><h4 class="text-xs font-bold text-slate-900">${i.name}</h4>
+        <p class="text-xs text-slate-500">Stock Remaining: ${i.inStock} ${i.unit} | Value at Risk: ${fmt(v)}</p></div>
+      </div>
+      <div class="flex items-center space-x-2 shrink-0">
+        <button onclick="openSpoilageModal('${i.sku}', '${i.name.replace(/'/g, "\\'")}')" class="px-3 py-2 text-xs font-bold text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-xl transition-all shadow-sm">Discard & Log Spoilage</button>
+        <button onclick="switchTab('promo')" class="px-4 py-2 text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl transition-all shadow-sm">Create Promo</button>
+      </div></div>`).join('') + (risk.length > 6 ? `<div class="p-3 text-xs text-slate-500">+ ${risk.length - 6} more near-expiry items in Inventory</div>` : '')
+    : '<div class="p-4 text-xs text-slate-500">No ingredients are close to expiry.</div>';
+
+  // Waste: value of Spoilage log entries by month
+  const skuCost = {}; rawIngredients.forEach(i => skuCost[i.sku] = i.unitCost);
+  const wasteBy = {};
+  spoilageLogs.forEach(l => {
+    const k = String(l.date || l.timestamp).slice(0, 7);
+    if (/^\d{4}-\d{2}$/.test(k)) wasteBy[k] = (wasteBy[k] || 0) + l.qty * (skuCost[l.sku] || 0);
+  });
+  const now = new Date(), months = [];
+  for (let k = 5; k >= 0; k--) { const d = new Date(now.getFullYear(), now.getMonth() - k, 1); months.push({ key: d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0'), label: d.toLocaleString('en', { month: 'short' }) }); }
+  const wasteVals = months.map(m => Math.round(wasteBy[m.key] || 0));
+  set('kpiWaste', fmt(wasteVals[5]));
+  set('kpiWasteSub', `${spoilageLogs.filter(l => String(l.date || l.timestamp).slice(0, 7) === months[5].key).length} entries in Spoilage log`);
+  set('wasteTotal', fmt(wasteVals.reduce((a, b) => a + b, 0)));
+  if (wasteChartInstance) {
+    wasteChartInstance.data.labels = months.map(m => m.label);
+    wasteChartInstance.data.datasets[0].label = 'Waste logged (THB)';
+    wasteChartInstance.data.datasets[0].data = wasteVals;
+    wasteChartInstance.update();
+  }
+
+  // Sales + forecast accuracy from POS
+  const p = posSummary;
+  if (!p || !p.week) {
+    set('kpiRev', '—'); set('kpiRevSub', 'Import POS CSV to see this');
+    set('kpiAcc', '—'); set('kpiAccSub', 'Import POS CSV to see this');
+    return;
+  }
+  set('kpiRev', fmt(p.rev28));
+  set('kpiRevSub', p.prev28 ? `${p.rev28 >= p.prev28 ? '↑ +' : '↓ '}${((p.rev28 / p.prev28 - 1) * 100).toFixed(1)}% vs previous 28 days` : `${p.from} to ${p.to}`);
+  const act = p.week.reduce((s, x) => s + x.ar, 0), err = p.week.reduce((s, x) => s + Math.abs(x.ar - x.fr), 0);
+  set('kpiAcc', act ? Math.max(0, (1 - err / act) * 100).toFixed(1) + '%' : '—');
+  set('kpiAccSub', '7-day backtest vs actual POS');
+  if (salesChartInstance) {
+    const mode = typeof chartDisplayMode !== 'undefined' ? chartDisplayMode : 'value', s = dashSeries(mode);
+    salesChartInstance.data.labels = p.week.map(x => x.date.slice(5));
+    salesChartInstance.data.datasets[0].data = s[0];
+    salesChartInstance.data.datasets[1].data = s[1];
+    salesChartInstance.update();
+  }
+}
+
+function exportInventoryCSV() { exportArrayToCSV(rawIngredients, `inventory_master_${new Date().toISOString().slice(0,10)}.csv`); }
+function exportMenuCSV() { exportArrayToCSV(menuItems, `menu_items_${new Date().toISOString().slice(0,10)}.csv`); }
+function exportSpoilageLogCSV() { exportArrayToCSV(spoilageLogs, `spoilage_log_${new Date().toISOString().slice(0,10)}.csv`); }
+
+function exportPurchaseOrderCSV() {
+  const poText = document.getElementById('poMessageArea').value;
+  const blob = new Blob([poText], { type: 'text/plain;charset=utf-8;' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `purchase_order_${new Date().toISOString().slice(0,10)}.txt`;
+  link.click();
+  showToast('Exported Purchase Order File!');
+}
+
+function saveStateToLocalStorage() {
+  localStorage.setItem('wasteless_inventory', JSON.stringify(rawIngredients));
+  localStorage.setItem('wasteless_menu', JSON.stringify(menuItems));
+  localStorage.setItem('wasteless_recipes', JSON.stringify(recipes));
+  localStorage.setItem('wasteless_spoilage_logs', JSON.stringify(spoilageLogs));
+}
+
+// App Navigation Controls
+function switchTab(tabId) {
+  ['dashboard', 'predictor', 'shopping', 'promo', 'inventory'].forEach(t => {
+    document.getElementById(`view-${t}`).classList.toggle('hidden', t !== tabId);
+    document.getElementById(`tab-${t}`).classList.toggle('active-nav-tab', t === tabId);
+  });
+  if (tabId === 'predictor') updatePredictions();
+  if (tabId === 'shopping') { renderSupplierTabs(); recalculateBOM(); }
+  if (tabId === 'inventory') renderInventoryTable();
+}
+
+function initCharts() {
+  Chart.defaults.font.family = "'Inter', sans-serif";
+  Chart.defaults.color = '#5b7089';
+  const ctxSales = document.getElementById('salesChart').getContext('2d');
+  const grad = ctxSales.createLinearGradient(0, 0, 0, 260);
+  grad.addColorStop(0, 'rgba(20,121,238,.30)');
+  grad.addColorStop(1, 'rgba(20,121,238,0)');
+  const gridCfg = { color: '#e8f0fb', drawBorder: false };
+  salesChartInstance = new Chart(ctxSales, {
+    type: 'line',
+    data: {
+      labels: ['Mon', 'Tue', 'Wed (Rain)', 'Thu', 'Fri', 'Sat', 'Sun'],
+      datasets: [
+        { label: 'Actual POS Revenue (฿)', data: [24700, 26650, 20150, null, null, null, null], borderColor: '#1479ee', backgroundColor: grad, borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#1479ee', pointBorderWidth: 2, pointRadius: 4, tension: 0.35, fill: true },
+        { label: 'Forecast Revenue (฿)', data: [24375, 26325, 20475, 25350, 33150, 37700, 35750], borderColor: '#8b5cf6', borderDash: [6, 5], borderWidth: 2.5, pointRadius: 3, pointBackgroundColor: '#8b5cf6', tension: 0.35 }
+      ]
+    },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { usePointStyle: true, boxWidth: 14, boxHeight: 8, padding: 22, font: { size: 12, weight: '600' } } } },
+      scales: { x: { grid: { display: false } }, y: { grid: gridCfg } } }
+  });
+
+  const ctxWaste = document.getElementById('wasteChart').getContext('2d');
+  wasteChartInstance = new Chart(ctxWaste, {
+    type: 'bar',
+    data: {
+      labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+      datasets: [{ label: 'Saved (THB)', data: [28000, 32000, 35500, 39000, 42000, 42850], backgroundColor: ['#bcdcfb', '#a3cff9', '#82bcf7', '#5aa7f5', '#3a97f3', '#1479ee'], borderRadius: 10, borderSkipped: false }]
+    },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+      scales: { x: { grid: { display: false } }, y: { grid: gridCfg } } }
+  });
+}
+
+function toggleChartMode(mode) {
+  chartDisplayMode = mode;
+  document.getElementById('btnChartValue').className = mode === 'value' ? "px-2.5 py-1 text-[11px] font-bold rounded-lg bg-white text-blue-800 shadow-sm" : "px-2.5 py-1 text-[11px] font-bold rounded-lg text-slate-600";
+  document.getElementById('btnChartVolume').className = mode === 'volume' ? "px-2.5 py-1 text-[11px] font-bold rounded-lg bg-white text-blue-800 shadow-sm" : "px-2.5 py-1 text-[11px] font-bold rounded-lg text-slate-600";
+  salesChartInstance.data.datasets[0].label = mode === 'value' ? 'Actual POS Revenue (฿)' : 'Actual POS Sales (Pcs)';
+  salesChartInstance.data.datasets[0].data = dashSeries(mode)[0];
+  salesChartInstance.data.datasets[1].label = mode === 'value' ? 'Forecast Revenue (฿)' : 'Forecast Sales (Pcs)';
+  salesChartInstance.data.datasets[1].data = dashSeries(mode)[1];
+  salesChartInstance.update();
+}
+
+function refreshDashboardData() { showToast('Synced live POS sales & weather forecast data!'); }
+
+// MONTHLY FORECAST ENGINE (4-WEEK CYCLE)
+const MONTH_IDX = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+let todayPos = null; // { w: weekIndex, d: dayIndex } of the real "today" inside the forecast data
+
+function detectToday() {
+  const now = new Date();
+  todayPos = null;
+  fullMonthForecast.forEach((wk, w) => wk.days.forEach((day, d) => {
+    const parts = day.dateStr.split(' ');
+    if (MONTH_IDX[parts[0]] === now.getMonth() && parseInt(parts[1], 10) === now.getDate()) todayPos = { w, d };
+  }));
+}
+function isToday(w, d) { return !!todayPos && todayPos.w === w && todayPos.d === d; }
+function dayOffsetFromToday(w, d) { return todayPos ? (w * 7 + d) - (todayPos.w * 7 + todayPos.d) : null; }
+function offsetLabel(off) {
+  if (off === 1) return 'TOMORROW';
+  if (off === -1) return 'YESTERDAY';
+  return off > 0 ? `IN ${off} DAYS` : `${Math.abs(off)} DAYS AGO`;
+}
+function jumpToToday() {
+  if (!todayPos) return;
+  currentMonthWeekIndex = todayPos.w;
+  selectedDayIndex = todayPos.d;
+  syncWeekHeader();
+  renderWeatherTimeline();
+  updatePredictions();
+}
+function syncWeekHeader() {
+  const hasToday = todayPos && todayPos.w === currentMonthWeekIndex;
+  document.getElementById('weekIndicatorBadge').innerHTML = `Week ${currentMonthWeekIndex + 1} / 4${hasToday ? '<span class="week-dot" title="This week includes today"></span>' : ''}`;
+  document.getElementById('currentWeekRangeLabel').innerText = `Showing: ${fullMonthForecast[currentMonthWeekIndex].weekTitle}`;
+  document.getElementById('btnPrevWeek').disabled = currentMonthWeekIndex === 0;
+  document.getElementById('btnNextWeek').disabled = currentMonthWeekIndex === fullMonthForecast.length - 1;
+}
+function updateTodayChip() {
+  const chip = document.getElementById('todayChip');
+  if (!chip) return;
+  if (!todayPos) { chip.style.display = 'none'; return; }
+  const t = fullMonthForecast[todayPos.w].days[todayPos.d];
+  const away = !(currentMonthWeekIndex === todayPos.w && selectedDayIndex === todayPos.d);
+  chip.classList.toggle('is-away', away);
+  document.getElementById('todayChipText').textContent = `Today · ${t.dayName}, ${t.dateStr}`;
+}
+
+function navigateMonthWeek(direction) {
+  let newIdx = currentMonthWeekIndex + direction;
+  if (newIdx < 0) newIdx = 0;
+  if (newIdx > 3) newIdx = 3;
+  currentMonthWeekIndex = newIdx;
+  selectedDayIndex = 0; // reset to first day of selected week
+  syncWeekHeader();
+  renderWeatherTimeline();
+  updatePredictions();
+}
+
+function getWeatherSvgIcon(weatherType) {
+  if (weatherType === 'sunny') {
+    return `<svg class="w-6 h-6 text-amber-500 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>`;
+  } else if (weatherType === 'cloudy') {
+    return `<svg class="w-6 h-6 text-slate-400 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 00-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>`;
+  } else {
+    return `<svg class="w-6 h-6 text-blue-500 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 16.2A4.5 4.5 0 0017.5 8h-1.8A7 7 0 104 14.9M16 14v6m-4-4v6m-4-2v4"/></svg>`;
+  }
+}
+
+// RENDER TOP 7-DAY CARDS (TODAY card keeps its flag in every week)
+function renderWeatherTimeline() {
+  const container = document.getElementById('weatherTimeline');
+  const w = currentMonthWeekIndex;
+  const weekData = fullMonthForecast[w].days;
+
+  container.innerHTML = weekData.map((d, idx) => {
+    const today = isToday(w, idx);
+    const typeCls = d.dayType === 'Weekday' ? 'chip-weekday' : (d.dayType === 'Weekend' ? 'chip-weekend' : 'chip-festival');
+    const trafficCls = d.trafficImpact === '+0%' ? 'tr-flat' : (d.trafficImpact.startsWith('-') ? 'tr-down' : 'tr-up');
+    return `
+      <div onclick="selectPredictorDay(${idx})" class="weather-card wc-${d.weather} ${idx === selectedDayIndex ? 'active-day' : ''} ${today ? 'is-today' : ''}">
+        ${today ? '<span class="today-flag"><i></i>TODAY</span>' : ''}
+        <div>
+          <div class="wc-head"><span class="wc-day">${d.dayName}</span><span class="wc-date">${d.dateStr}</span></div>
+          <div class="wc-weather"><span class="wc-icon">${getWeatherSvgIcon(d.weather)}</span><span class="wc-temp">${d.temp}</span></div>
+          <div class="wc-badges">
+            <span class="chip ${typeCls}">${d.dayType.toUpperCase()}</span>
+            ${d.isEvent ? '<span class="chip chip-event">EVENT</span>' : ''}
+          </div>
+        </div>
+        <div class="wc-foot">
+          <p class="wc-event">📍 ${d.event}</p>
+          <span class="wc-traffic ${trafficCls}">${d.trafficImpact} Traffic</span>
+          ${today && getFeedbackFor(d.dateStr) ? `<span class="chip ${getFeedbackFor(d.dateStr).correct ? 'chip-ok' : 'chip-miss'}" style="display:inline-block;margin-top:4px">${getFeedbackFor(d.dateStr).correct ? '✓ FORECAST HIT' : '✗ FORECAST MISSED'}</span>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+
+  renderSelectedDayDetail();
+  renderWeatherFeedback();
+  updateTodayChip();
+}
+
+// RENDER RICH SELECTED DAY DETAIL CARD BELOW WITH EVENT IMAGE & AI PREP
+function renderSelectedDayDetail() {
+  const container = document.getElementById('selectedDayDetailCard');
+  const w = currentMonthWeekIndex;
+  const d = fullMonthForecast[w].days[selectedDayIndex];
+  const today = isToday(w, selectedDayIndex);
+  const off = dayOffsetFromToday(w, selectedDayIndex);
+
+  const trafficBadgeColor = d.trafficImpact.startsWith('+') && d.trafficImpact !== '+0%'
+    ? 'bg-blue-500 text-white'
+    : d.trafficImpact.startsWith('-')
+    ? 'bg-rose-500 text-white'
+    : 'bg-slate-700 text-slate-200';
+
+  let whenHtml = '';
+  if (todayPos) {
+    whenHtml = today
+      ? '<span class="when-badge is-now"><i></i>TODAY</span>'
+      : `<span class="when-badge">${offsetLabel(off)}</span>`;
+  }
+  const backBtn = (todayPos && !today) ? '<button onclick="jumpToToday()" class="back-today">↩ Back to today</button>' : '';
+
+  container.innerHTML = `
+    <div class="flex flex-col lg:flex-row items-stretch gap-6">
+      <!-- Left: Event Graphic Card -->
+      <div class="relative w-full lg:w-2/5 h-48 lg:h-auto min-h-[190px] rounded-2xl overflow-hidden group shadow-lg shrink-0" style="background:linear-gradient(135deg,#0e4a9a,#1479ee)">
+        <img src="${d.eventImg}" alt="${d.event}" onerror="this.style.display='none'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent"></div>
+        <div class="absolute top-3 left-3 flex items-center space-x-2">
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${d.dayTypeBadge}">${d.dayType}</span>
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider shadow-md ${trafficBadgeColor}">Demand ${d.trafficImpact}</span>
+        </div>
+        <div class="absolute bottom-3 left-3 right-3">
+          <span class="text-[10px] text-sky-300 font-bold uppercase tracking-widest block">📍 Event Focus</span>
+          <h4 class="text-base font-bold text-white leading-snug">${d.event}</h4>
+        </div>
+      </div>
+
+      <!-- Right: Detailed Day Operational Briefing -->
+      <div class="flex-1 flex flex-col justify-between space-y-3">
+        <div>
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-white/15 pb-2 mb-3">
+            <div>
+              <h3 class="text-lg font-bold text-white tracking-tight flex flex-wrap items-center gap-2">
+                <span>${d.dayName}, ${d.dateStr}</span>
+                ${whenHtml}
+                <span class="text-xs font-normal text-blue-200">(${fullMonthForecast[w].weekTitle.split(' (')[0]})</span>
+              </h3>
+              <p class="text-xs text-blue-100 mt-1">${d.eventDesc}</p>
+            </div>
+            <div class="flex items-center gap-2">
+              ${backBtn}
+              <div class="flex items-center space-x-2 bg-white/10 px-3 py-1.5 rounded-xl border border-white/20">
+                ${getWeatherSvgIcon(d.weather)}
+                <span class="text-xs font-bold text-amber-300">${d.temp}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Action Recommendations for this day -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+            <div class="stat-box">
+              <span class="text-[10px] text-sky-300 font-bold uppercase tracking-wider block mb-1">Expected Demand</span>
+              <p class="text-sm font-bold text-white">${demandText(d)}</p>
+              <p class="text-[11px] text-blue-200 mt-0.5">Compared with a normal day</p>
+            </div>
+            <div class="stat-box">
+              <span class="text-[10px] text-cyan-300 font-bold uppercase tracking-wider block mb-1">Prep Suggestion</span>
+              <p class="text-sm font-bold text-white">${d.multiplier >= 1.2 ? 'Prepare 25% extra' : d.multiplier <= 0.9 ? 'Prepare 10% less' : 'Prepare as usual'}</p>
+              <p class="text-[11px] text-blue-200 mt-0.5">${d.multiplier >= 1.2 ? 'Prepare extra ice & fresh milk' : 'Keep normal stock levels'}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-2 border-t border-white/15 flex items-center justify-between text-[11px] text-blue-200">
+          <span>Tip: click any day card above to see its details.</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+
+// ===== WEATHER REALITY CHECK: did it rain as forecast? =====
+let weatherFeedback = [];
+try { weatherFeedback = JSON.parse(localStorage.getItem('wasteless_weather_feedback')) || []; } catch (e) { weatherFeedback = []; }
+const WEATHER_LABEL = { sunny: 'Sunny', rainy: 'Rain', cloudy: 'Cloudy' };
+
+function getFeedbackFor(dateStr) { return weatherFeedback.find(f => f.date === dateStr); }
+function rainReliability() {
+  // Starts at 1.0 (no change). Each missed rain forecast lowers how strongly rainy-day impact is applied.
+  const rf = weatherFeedback.filter(f => f.forecast === 'rainy');
+  const hits = rf.filter(f => f.actual === 'rain').length;
+  return (hits + 2) / (rf.length + 2);
+}
+function adjustedMultiplier(day) {
+  const base = day.multiplier || 1.0;
+  return day.weather === 'rainy' ? 1 + (base - 1) * rainReliability() : base;
+}
+function logWeatherFeedback(actual) {
+  if (!todayPos) return;
+  const d = fullMonthForecast[todayPos.w].days[todayPos.d];
+  const entry = {
+    date: d.dateStr, day: d.dayName, forecast: d.weather, actual: actual,
+    correct: (d.weather === 'rainy') === (actual === 'rain'),
+    timestamp: new Date().toLocaleString()
+  };
+  weatherFeedback = weatherFeedback.filter(f => f.date !== d.dateStr);
+  weatherFeedback.push(entry);
+  try { localStorage.setItem('wasteless_weather_feedback', JSON.stringify(weatherFeedback)); } catch (e) {}
+  renderWeatherTimeline();
+  updatePredictions();
+  showToast(entry.correct ? '✅ Logged — the forecast matched reality!' : '📝 Logged — future forecasts will be adjusted.');
+}
+function exportWeatherFeedbackCSV() { exportArrayToCSV(weatherFeedback, `weather_feedback_${new Date().toISOString().slice(0,10)}.csv`); }
+
+function renderWeatherFeedback() {
+  const el = document.getElementById('weatherFeedbackCard');
+  if (!el) return;
+  if (!todayPos) { el.innerHTML = ''; return; }
+  const d = fullMonthForecast[todayPos.w].days[todayPos.d];
+  const fb = getFeedbackFor(d.dateStr);
+  const total = weatherFeedback.length;
+  const hits = weatherFeedback.filter(f => f.correct).length;
+  const acc = total ? Math.round(hits / total * 100) + '%' : '—';
+  const rainN = weatherFeedback.filter(f => f.forecast === 'rainy').length;
+  const rel = rainReliability();
+
+  const result = fb
+    ? (fb.correct
+        ? `<p class="fb-result ok">✓ Forecast matched reality (${WEATHER_LABEL[fb.forecast]} predicted · ${fb.actual === 'rain' ? 'it rained' : 'no rain'}).</p>`
+        : `<p class="fb-result miss">✗ Forecast missed (${WEATHER_LABEL[fb.forecast]} predicted · ${fb.actual === 'rain' ? 'it rained' : 'no rain'}). Thanks — future forecasts will be adjusted.</p>`)
+    : '';
+
+  el.innerHTML = `
+    <div class="fb-card">
+      <div class="fb-head">
+        <div class="fb-icon">${d.weather === 'rainy' ? '☔' : '🌦️'}</div>
+        <p class="fb-title">Did the forecast match today? <span class="chip chip-today">TODAY · ${d.dayName}, ${d.dateStr}</span></p>
+        ${total ? `<button class="fb-export" onclick="exportWeatherFeedbackCSV()" title="Download the feedback log as CSV"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v10m0 0l-4-4m4 4l4-4M5 19h14"/></svg><span>Export log</span><em>${total}</em></button>` : ''}
+      </div>
+      <div class="fb-main">
+        <div>
+          <p class="fb-sub">Forecast: <b>${WEATHER_LABEL[d.weather]} · ${d.temp}</b>. Did it actually rain today? Your answer helps improve future forecasts.</p>
+          ${result}
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button onclick="logWeatherFeedback('rain')" class="fb-btn ${fb && fb.actual === 'rain' ? 'sel-rain' : ''}">☔ Yes, it rained</button>
+        <button onclick="logWeatherFeedback('dry')" class="fb-btn ${fb && fb.actual === 'dry' ? 'sel-dry' : ''}">☀️ No rain</button>
+      </div>
+      <div class="fb-stats">
+        <div class="fb-stat"><b>${acc}</b><span>Rain accuracy · ${hits}/${total}</span></div>
+        ${rainN ? `<div class="fb-stat"><b>${Math.round(rel * 100)}%</b><span>Rain forecast trust</span></div>` : ''}
+      </div>
+    </div>`;
+}
+
+function selectPredictorDay(idx) {
+  selectedDayIndex = idx;
+  renderWeatherTimeline();
+  updatePredictions();
+}
+
+function updatePredictions() {
+  const tbody = document.getElementById('predictorTableBody');
+  tbody.innerHTML = '';
+  
+  const activeDay = fullMonthForecast[currentMonthWeekIndex].days[selectedDayIndex];
+  document.getElementById('forecastTableHeading').innerText = `Forecasted Sales (${activeDay.dayName} ${activeDay.dateStr} - ${activeDay.event})${isToday(currentMonthWeekIndex, selectedDayIndex) ? ' · TODAY' : ''}`;
+
+  menuItems.forEach(item => {
+    const mult = adjustedMultiplier(activeDay);
+    const predictedSales = Math.round(item.baseSales * mult);
+    const varPercent = Math.round((mult - 1.0) * 100);
+    const varText = varPercent >= 0 ? `+${varPercent}%` : `${varPercent}%`;
+    const varColor = varPercent >= 0 ? 'text-blue-600 font-bold' : 'text-rose-600 font-bold';
+
+    tbody.innerHTML += `
+      <tr class="hover:bg-slate-50 transition-colors">
+        <td class="p-3.5 pl-5 font-bold text-slate-900">${item.name}</td>
+        <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[11px] font-semibold">${item.category}</span></td>
+        <td class="p-3.5 text-xs text-cyan-900 font-semibold">📍 ${activeDay.event} (${activeDay.trafficImpact})</td>
+        <td class="p-3.5 text-slate-600">${item.baseSales} units</td>
+        <td class="p-3.5 font-bold text-blue-700 text-sm">${predictedSales} units</td>
+        <td class="p-3.5 ${varColor}">${varText}</td>
+        <td class="p-3.5 pr-5"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${predictedSales > item.baseSales * 1.3 ? 'bg-red-100 text-red-700' : 'bg-emerald-100 text-emerald-700'}">${predictedSales > item.baseSales * 1.3 ? 'Reorder soon' : 'Stock OK'}</span></td>
+      </tr>
+    `;
+  });
+}
+
+function renderSupplierTabs() {
+  const allSuppliers = ['All', ...new Set([...customSuppliers, ...rawIngredients.map(i => i.supplier)])];
+  const container = document.getElementById('supplierTabs');
+  container.innerHTML = '';
+  allSuppliers.forEach(sup => {
+    container.innerHTML += `
+      <button onclick="filterSupplierBOM('${sup}')" class="px-3.5 py-1.5 rounded-xl text-xs whitespace-nowrap ${sup===currentSupplierFilter?'bg-[#1479ee] text-white font-bold':'bg-slate-100 text-slate-700'}">
+        ${sup}
+      </button>
+    `;
+  });
+}
+
+function filterSupplierBOM(sup) { currentSupplierFilter = sup; renderSupplierTabs(); recalculateBOM(); }
+
+function recalculateBOM() {
+  const bufferPercent = parseFloat(document.getElementById('safetyStockSelect').value);
+  const tbody = document.getElementById('bomTableBody');
+  tbody.innerHTML = '';
+  let grandTotalCost = 0;
+  let poLines = [];
+
+  const filtered = currentSupplierFilter === 'All' ? rawIngredients : rawIngredients.filter(i => i.supplier === currentSupplierFilter);
+
+  filtered.forEach(ing => {
+    let totalNeed = 0;
+    menuItems.forEach(item => {
+      const forecast = item.baseSales || 50;
+      const needPerUnit = (ing.perUnitNeed && ing.perUnitNeed[item.id]) ? ing.perUnitNeed[item.id] : 0;
+      totalNeed += forecast * needPerUnit;
+    });
+
+    const targetWithBuffer = Math.max(totalNeed * (1 + bufferPercent), ing.minStock || 0);
+    const suggestOrder = Math.max(0, targetWithBuffer - ing.inStock);
+    const suggestRounded = suggestOrder > 0 ? Math.max(Math.ceil(suggestOrder * 10) / 10, ing.moq || 0) : 0;
+    const itemTotalCost = suggestRounded * ing.unitCost;
+    grandTotalCost += itemTotalCost;
+
+    if (suggestRounded > 0) poLines.push(`- ${ing.name}: ${suggestRounded} ${ing.unit} (Est. ฿${itemTotalCost.toLocaleString()})`);
+
+    tbody.innerHTML += `
+      <tr class="hover:bg-slate-50 transition-colors">
+        <td class="p-3.5 pl-5"><input type="checkbox" checked class="accent-[#1479ee] w-4 h-4 rounded cursor-pointer"></td>
+        <td class="p-3.5 font-bold text-slate-900">${ing.name}</td>
+        <td class="p-3.5">${totalNeed.toFixed(1)} ${ing.unit}</td>
+        <td class="p-3.5">${ing.inStock} ${ing.unit}</td>
+        <td class="p-3.5 font-bold text-blue-700">${suggestRounded} ${ing.unit}</td>
+        <td class="p-3.5">${ing.moq || 1} ${ing.unit}</td>
+        <td class="p-3.5">฿${ing.unitCost}/${ing.unit}</td>
+        <td class="p-3.5 font-bold text-slate-900">฿${itemTotalCost.toLocaleString()}</td>
+        <td class="p-3.5 pr-5 text-slate-500">${ing.supplier || 'Vendor'}</td>
+      </tr>
+    `;
+  });
+
+  document.getElementById('bomTotalCost').innerText = `฿${grandTotalCost.toLocaleString()}`;
+  document.getElementById('poMessageArea').value = `[PURCHASE ORDER - Wasteless]
+Date: ${new Date().toLocaleDateString()}
+Items:
+${poLines.join('\n')}
+Total Estimated Cost: ฿${grandTotalCost.toLocaleString()}`;
+}
+
+// ===== PROMOTIONS: built from expiry, stock, recipes, POS trend, forecast and margin floor =====
+function riskList() {
+  const t0 = new Date(todayStr() + 'T00:00:00');
+  return rawIngredients.map(i => ({ i, d: Math.round((new Date(i.expiry + 'T00:00:00') - t0) / 864e5), v: i.inStock * i.unitCost }))
+    .filter(x => x.d <= 3).sort((a, b) => a.d - b.d || b.v - a.v);
+}
+
+function promoControls() {
+  const sel = document.getElementById('promoFocusItem'); if (!sel) return;
+  const keep = sel.value;
+  sel.innerHTML = '<option value="auto">All expiring ingredients (auto)</option>' +
+    riskList().map(x => `<option value="${x.i.sku}">${x.i.name} (${x.d <= 0 ? 'expires today' : 'in ' + x.d * 24 + 'h'})</option>`).join('');
+  if ([...sel.options].some(o => o.value === keep)) sel.value = keep;
+}
+
+function generateAIPromoCampaigns() {
+  const box = document.getElementById('promoResultsContainer');
+  const floor = parseFloat(document.getElementById('promoMarginFloor').value) || 0.45;
+  const focus = document.getElementById('promoFocusItem').value;
+  const th = document.getElementById('promoLanguage').value === 'Thai';
+  const day = fullMonthForecast[currentMonthWeekIndex].days[selectedDayIndex];
+  const mult = adjustedMultiplier(day), pct = Math.round((mult - 1) * 100);
+  const fmt = n => '฿' + Math.round(n).toLocaleString();
+  const fc = {}; menuItems.forEach(m => fc[m.id] = Math.round(m.baseSales * mult));
+  const pickDisc = m => Math.min(30, Math.floor(Math.max(0, 1 - m.cogs / ((1 - floor) * m.price)) * 20) * 5);
+  const margin = (price, cogs) => Math.round((price - cogs) / price * 100);
+  const cards = [], used = new Set();
+
+  // 1) Use up expiring ingredients
+  riskList().filter(x => focus === 'auto' || x.i.sku === focus).slice(0, 3).forEach(({ i, d, v }) => {
+    const users = menuItems.filter(m => i.perUnitNeed && i.perUnitNeed[m.id])
+      .sort((a, b) => (b.price - b.cogs) - (a.price - a.cogs));
+    const when = d <= 0 ? 'expires today' : `expires in ${d * 24}h`;
+    if (!users.length) { cards.push({ kind: 'Note', title: `No recipe uses ${i.name}`, text: `${i.inStock} ${i.unit} (${fmt(v)}) ${when}. Consider a staff meal, a donation, or log it as waste.` }); return; }
+    const m = users[0], per = i.perUnitNeed[m.id], daysLeft = Math.max(d, 1);
+    const perDay = users.reduce((s, u) => s + fc[u.id] * i.perUnitNeed[u.id], 0);
+    const surplus = Math.max(0, i.inStock - perDay * daysLeft);
+    if (surplus <= 0) { cards.push({ kind: 'On track', title: `${i.name}: no promo needed`, text: `Forecast sales use ~${(perDay * daysLeft).toFixed(1)} ${i.unit} before it expires, and you have ${i.inStock} ${i.unit}.` }); return; }
+    used.add(m.id);
+    const disc = pickDisc(m), np = Math.round(m.price * (1 - disc / 100)), port = Math.floor(surplus / per);
+    cards.push({
+      kind: 'Use up', title: disc ? `${disc}% off ${m.name}` : `Feature ${m.name}`,
+      text: `${i.name}: ${i.inStock} ${i.unit} (${fmt(v)}) ${when}. About ${surplus.toFixed(1)} ${i.unit} will be left over, enough for ${port} portions of ${m.name}. Sell ~${Math.ceil(port / daysLeft)} extra per day.`,
+      stats: [['At risk', fmt(v)], ['Price', disc ? `${fmt(np)} (was ${fmt(m.price)})` : fmt(m.price)], ['Margin', margin(np, m.cogs) + '%']],
+      caption: th ? `${m.name} ${disc ? 'ลด ' + disc + '% เหลือ ' + fmt(np) : 'เมนูแนะนำวันนี้'} วันนี้เท่านั้น วัตถุดิบสดใหม่ จำนวนจำกัด` : `${m.name} ${disc ? disc + '% off, now ' + fmt(np) : 'is today’s special'}. Fresh ingredients, today only.`,
+      tv: { badge: 'FLASH SALE - TODAY ONLY', title: m.name, old: disc ? fmt(m.price) : '', now: fmt(np) }
+    });
+  });
+
+  // 2) Boost the item whose sales are falling (POS) or lowest in forecast
+  const tr = m => posSummary && posSummary.trend && posSummary.trend[m.id] && posSummary.trend[m.id].length ? posSummary.trend[m.id].reduce((a, b) => a + b, 0) / posSummary.trend[m.id].length : null;
+  const slow = menuItems.filter(m => !used.has(m.id) && pickDisc(m) >= 5)
+    .map(m => ({ m, r: tr(m) == null ? mult : tr(m) / m.baseSales })).sort((a, b) => a.r - b.r || fc[a.m.id] - fc[b.m.id])[0];
+  if (slow) {
+    const m = slow.m, disc = Math.min(15, pickDisc(m)), np = Math.round(m.price * (1 - disc / 100)), a = tr(m);
+    used.add(m.id);
+    cards.push({
+      kind: 'Boost', title: `${disc}% off ${m.name}`,
+      text: a == null ? `Lowest expected demand on the menu (~${fc[m.id]} pcs on ${day.dayName}).`
+        : `Selling ~${a.toFixed(0)}/day over the last 7 days vs ~${m.baseSales}/day over 28 days (${Math.round((slow.r - 1) * 100)}%). A small discount can pull it back.`,
+      stats: [['Forecast', fc[m.id] + ' pcs'], ['Price', fmt(np)], ['Margin', margin(np, m.cogs) + '%']],
+      caption: th ? `${m.name} ลด ${disc}% เหลือ ${fmt(np)} สั่งวันนี้` : `${m.name} ${disc}% off, now ${fmt(np)}. Order today.`,
+      tv: { badge: 'TODAY’S DEAL', title: m.name, old: fmt(m.price), now: fmt(np) }
+    });
+  }
+
+  // 3) Ride the forecast peak with a combo
+  const star = menuItems.slice().sort((a, b) => fc[b.id] - fc[a.id])[0];
+  const side = menuItems.filter(m => star && m.id !== star.id && m.category !== star.category).sort((a, b) => (b.price - b.cogs) - (a.price - a.cogs))[0];
+  if (star && side) {
+    const sum = star.price + side.price, cogs = star.cogs + side.cogs;
+    let cd = 10; while (cd > 0 && margin(sum * (1 - cd / 100), cogs) < floor * 100) cd -= 5;
+    const cp = Math.round(sum * (1 - cd / 100));
+    cards.push({
+      kind: 'Combo', title: `${star.name} + ${side.name}`,
+      text: `${star.name} is the top forecast seller (~${fc[star.id]} pcs, ${pct >= 0 ? '+' : ''}${pct}% vs normal). Pair it with ${side.name}, your best-margin ${side.category.toLowerCase()} item.`,
+      stats: [['Forecast', fc[star.id] + ' pcs'], ['Combo', fmt(cp)], ['Margin', margin(cp, cogs) + '%']],
+      caption: th ? `คอมโบ ${star.name} + ${side.name} เพียง ${fmt(cp)}` : `Combo: ${star.name} + ${side.name} for ${fmt(cp)}.`,
+      tv: { badge: 'COMBO DEAL', title: `${star.name}<br>+ ${side.name}`, old: fmt(sum), now: fmt(cp) }
+    });
+  }
+
+  window._promos = cards;
+  const kindCls = { 'Use up': 'bg-amber-100 text-amber-800', Boost: 'bg-blue-100 text-blue-800', Combo: 'bg-cyan-100 text-cyan-800', 'On track': 'bg-emerald-100 text-emerald-700', Note: 'bg-slate-100 text-slate-600' };
+  box.innerHTML = `<p class="md:col-span-2 text-xs text-slate-500">Based on ${day.dayName} ${day.dateStr} (${WEATHER_LABEL[day.weather]} ${day.temp}, ${pct >= 0 ? '+' : ''}${pct}% sales), stock, recipes${posSummary ? ' and POS trend' : ''}. Minimum margin ${Math.round(floor * 100)}%.</p>` +
+    cards.map((c, n) => `
+    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col">
+      <span class="self-start text-[10px] font-bold uppercase px-2.5 py-1 rounded-full ${kindCls[c.kind]}">${c.kind}</span>
+      <h3 class="text-sm font-bold text-slate-900">${c.title}</h3>
+      <p class="text-xs text-slate-600">${c.text}</p>
+      ${c.stats ? `<div class="grid grid-cols-3 gap-2">${c.stats.map(s => `<div class="bg-slate-50 border border-slate-200 rounded-xl p-2 text-center"><b class="block text-xs text-slate-900">${s[1]}</b><span class="text-[10px] text-slate-500">${s[0]}</span></div>`).join('')}</div>` : ''}
+      ${c.caption ? `<p class="text-xs bg-blue-50 border border-blue-100 rounded-xl p-2.5 text-blue-900">${c.caption}</p>` : ''}
+      ${c.tv ? `<div class="pt-2 flex gap-2 mt-auto"><button onclick="showToast('Synced promo to POS!')" class="px-3 py-1.5 bg-[#1479ee] text-white text-xs font-bold rounded-xl flex-1">Send to POS</button><button onclick="showPromoOnTV(${n})" class="px-3 py-1.5 bg-cyan-600 text-white text-xs font-bold rounded-xl">Show on Store TV</button></div>` : ''}
+    </div>`).join('');
+}
+
+function showPromoOnTV(n) {
+  const t = window._promos[n].tv, set = (id, h) => { document.getElementById(id).innerHTML = h; };
+  set('tvBadge', t.badge); set('tvTitle', t.title); set('tvNew', t.now + ' ONLY!');
+  set('tvOld', t.old); document.getElementById('tvOld').style.display = t.old ? '' : 'none';
+  openSignageModal();
+}
+
+function renderInventoryTable() {
+  const tbody = document.getElementById('inventoryTableBody');
+  tbody.innerHTML = '';
+  rawIngredients.forEach(ing => {
+    tbody.innerHTML += `
+      <tr class="hover:bg-slate-50 transition-colors">
+        <td class="p-3.5 pl-5 font-mono text-slate-500 text-[11px]">${ing.sku}</td>
+        <td class="p-3.5 font-bold text-slate-900">${ing.name}</td>
+        <td class="p-3.5"><span class="px-2.5 py-1 rounded-xl bg-cyan-50 text-cyan-800 text-[10px] font-bold">${ing.batchOrder || 'Batch #1'}</span></td>
+        <td class="p-3.5 font-bold text-slate-900">${ing.inStock} ${ing.unit}</td>
+        <td class="p-3.5">฿${ing.unitCost}/${ing.unit}</td>
+        <td class="p-3.5 font-mono text-slate-600">${ing.expiry}</td>
+        <td class="p-3.5"><span class="px-2.5 py-1 rounded-full text-[10px] font-bold ${ing.status==='Critical'?'bg-red-100 text-red-700':(ing.status==='Warning'?'bg-amber-100 text-amber-800':'bg-emerald-100 text-emerald-700')}">${ing.status}</span></td>
+        <td class="p-3.5 pr-5">
+          <button onclick="openEditStockModal('${ing.sku}')" class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1 rounded-lg border border-blue-200">Edit Stock</button>
+        </td>
+      </tr>
+    `;
+  });
+
+  const btnContainer = document.getElementById('recipeButtons');
+  btnContainer.innerHTML = '';
+  Object.keys(recipes).forEach(name => {
+    btnContainer.innerHTML += `
+      <button onclick="openRecipeModal('${name}')" class="p-3.5 text-left bg-slate-50 hover:bg-blue-50 border border-slate-200 rounded-2xl transition-all flex items-center justify-between">
+        <span class="text-xs font-bold text-slate-900">${name}</span>
+        <span class="text-xs text-blue-600 font-bold">View recipe →</span>
+      </button>
+    `;
+  });
+}
+
+function filterInventoryTable() {
+  const query = document.getElementById('inventorySearch').value.toLowerCase();
+  document.querySelectorAll('#inventoryMasterTable tr').forEach(row => {
+    row.style.display = row.innerText.toLowerCase().includes(query) ? '' : 'none';
+  });
+}
+
+// Modal Controls
+function openEditStockModal(sku) {
+  const ing = rawIngredients.find(i => i.sku === sku); if (!ing) return;
+  document.getElementById('editStockSku').value = ing.sku;
+  document.getElementById('editStockName').value = ing.name;
+  document.getElementById('editStockQty').value = ing.inStock;
+  document.getElementById('editStockUnit').value = ing.unit;
+  document.getElementById('editStockModal').classList.remove('hidden');
+  document.getElementById('editStockModal').classList.add('flex');
+}
+function closeEditStockModal() { document.getElementById('editStockModal').classList.add('hidden'); document.getElementById('editStockModal').classList.remove('flex'); }
+
+function saveStockEdit() {
+  const sku = document.getElementById('editStockSku').value;
+  const newQty = parseFloat(document.getElementById('editStockQty').value);
+  const ing = rawIngredients.find(i => i.sku === sku);
+  if (ing) {
+    ing.inStock = newQty;
+    saveStateToLocalStorage();
+    renderInventoryTable();
+    recalculateBOM();
+    renderDashboard();
+    showToast(`Saved stock update!`);
+  }
+  closeEditStockModal();
+}
+
+function openSpoilageModal(sku, name) {
+  document.getElementById('spoilageSku').value = sku;
+  document.getElementById('spoilageName').value = name;
+  document.getElementById('spoilageModal').classList.remove('hidden');
+  document.getElementById('spoilageModal').classList.add('flex');
+}
+function closeSpoilageModal() { document.getElementById('spoilageModal').classList.add('hidden'); document.getElementById('spoilageModal').classList.remove('flex'); }
+
+function saveSpoilageLog() {
+  const sku = document.getElementById('spoilageSku').value;
+  const qty = parseFloat(document.getElementById('spoilageQty').value);
+  const reason = document.getElementById('spoilageReason').value;
+  const ing = rawIngredients.find(i => i.sku === sku);
+  if (ing) {
+    ing.inStock = Math.max(0, ing.inStock - qty);
+    spoilageLogs.push({ date: todayStr(), timestamp: new Date().toLocaleString(), sku: sku, name: ing.name, qty: qty, unit: ing.unit, reason: reason });
+    saveStateToLocalStorage();
+    renderInventoryTable();
+    recalculateBOM();
+    renderDashboard();
+    showToast(`Logged ${qty} ${ing.unit} waste!`);
+  }
+  closeSpoilageModal();
+}
+
+function openAddMenuModal() {
+  document.getElementById('newMenuName').value = '';
+  document.getElementById('newMenuPrice').value = '';
+  document.getElementById('newMenuBaseSales').value = '';
+  document.getElementById('newMenuIngredientsContainer').innerHTML = '';
+  addIngredientRowToAddMenu();
+  document.getElementById('addMenuModal').classList.remove('hidden');
+  document.getElementById('addMenuModal').classList.add('flex');
+}
+function closeAddMenuModal() { document.getElementById('addMenuModal').classList.add('hidden'); document.getElementById('addMenuModal').classList.remove('flex'); }
+
+function addIngredientRowToAddMenu() {
+  const container = document.getElementById('newMenuIngredientsContainer');
+  const rowId = 'ing_row_' + Date.now();
+  let options = rawIngredients.map(ing => `<option value="${ing.name}">${ing.name} (฿${ing.unitCost}/${ing.unit})</option>`).join('');
+  const rowHtml = `
+    <div id="${rowId}" class="flex items-center space-x-2 bg-slate-50 p-2 rounded-2xl border border-slate-200">
+      <select class="ing-select flex-1 bg-white border text-xs font-semibold rounded-xl p-2">${options}</select>
+      <input type="text" placeholder="Qty (e.g. 150 ml)" class="ing-qty w-32 bg-white border text-xs rounded-xl p-2">
+      <button type="button" onclick="document.getElementById('${rowId}').remove()" class="text-slate-400 hover:text-red-500 font-bold p-1">✕</button>
+    </div>
+  `;
+  container.insertAdjacentHTML('beforeend', rowHtml);
+}
+
+function saveNewMenu() {
+  const name = document.getElementById('newMenuName').value.trim();
+  const category = document.getElementById('newMenuCategory').value;
+  const price = parseFloat(document.getElementById('newMenuPrice').value) || 85;
+  const baseSales = parseInt(document.getElementById('newMenuBaseSales').value) || 50;
+  if (!name) { showToast('⚠️ Please enter menu name'); return; }
+
+  const rows = document.querySelectorAll('#newMenuIngredientsContainer > div');
+  let recipeList = [];
+  const newId = menuItems.length + 1;
+
+  rows.forEach(row => {
+    const ingName = row.querySelector('.ing-select').value;
+    const qtyText = row.querySelector('.ing-qty').value.trim() || '1 serving';
+    recipeList.push({ name: ingName, qty: qtyText, cost: '฿5.00' });
+  });
+
+  menuItems.push({ id: newId, name: name, category: category, baseSales: baseSales, weatherSens: 'neutral', price: price, cogs: price * 0.28 });
+  recipes[name] = recipeList;
+  saveStateToLocalStorage();
+  closeAddMenuModal();
+  updatePredictions();
+  renderInventoryTable();
+  showToast(`Added '${name}' menu item!`);
+}
+
+function openRecipeModal(menuName) {
+  document.getElementById('recipeModalTitle').innerText = menuName;
+  const list = recipes[menuName] || [];
+  const menuItem = menuItems.find(m => m.name === menuName) || { price: 65, cogs: 18.50 };
+  document.getElementById('recipePrice').innerText = `฿${menuItem.price}`;
+  document.getElementById('recipeCogs').innerText = `฿${menuItem.cogs.toFixed(2)}`;
+
+  const tbody = document.getElementById('recipeModalBody');
+  tbody.innerHTML = '';
+  list.forEach(r => {
+    tbody.innerHTML += `<tr><td class="p-2.5 font-semibold">${r.name}</td><td class="p-2.5">${r.qty}</td><td class="p-2.5 font-bold text-blue-700">${r.cost}</td></tr>`;
+  });
+  document.getElementById('recipeModal').classList.remove('hidden');
+  document.getElementById('recipeModal').classList.add('flex');
+}
+function closeRecipeModal() { document.getElementById('recipeModal').classList.add('hidden'); document.getElementById('recipeModal').classList.remove('flex'); }
+
+function openCopilotModal() { document.getElementById('copilotModal').classList.remove('hidden'); document.getElementById('copilotModal').classList.add('flex'); }
+function closeCopilotModal() { document.getElementById('copilotModal').classList.add('hidden'); document.getElementById('copilotModal').classList.remove('flex'); }
+
+// ===== WASTELESS ASSISTANT: local demo replies (no AI API, no account, no API key) =====
+const copilotHistory = [];
+
+function buildStoreContext() {
+  const day = fullMonthForecast[currentMonthWeekIndex].days[selectedDayIndex], mult = adjustedMultiplier(day);
+  const t0 = new Date(todayStr() + 'T00:00:00'), buf = parseFloat(document.getElementById('safetyStockSelect').value) || 0.1;
+  const need = i => menuItems.reduce((s, m) => s + (m.baseSales || 0) * ((i.perUnitNeed && i.perUnitNeed[m.id]) || 0), 0);
+  return JSON.stringify({
+    today: todayStr(),
+    forecast_day: { date: day.dateStr, weekday: day.dayName, weather: day.weather, temp: day.temp, event: day.event, sales_multiplier: +mult.toFixed(2) },
+    menu: menuItems.map(m => ({ name: m.name, category: m.category, price: m.price, cogs: m.cogs, margin_pct: Math.round((m.price - m.cogs) / m.price * 100), base_daily_sales: m.baseSales, forecast_for_day: Math.round(m.baseSales * mult), last7_daily_sales: m.trend7d })),
+    ingredients: rawIngredients.map(i => {
+      const target = Math.max(need(i) * (1 + buf), i.minStock || 0), order = Math.max(0, target - i.inStock);
+      return { name: i.name, stock: i.inStock, unit: i.unit, unit_cost: i.unitCost, expires_in_days: Math.round((new Date(i.expiry + 'T00:00:00') - t0) / 864e5), min_stock: i.minStock, moq: i.moq, supplier: i.supplier, suggested_order: order > 0 ? Math.max(Math.ceil(order * 10) / 10, i.moq || 0) : 0 };
+    }),
+    recipes: Object.fromEntries(Object.entries(recipes).map(([k, v]) => [k, v.map(r => `${r.name} ${r.qty}`)])),
+    pos: posSummary ? { from: posSummary.from, to: posSummary.to, revenue_last_28d: posSummary.rev28, revenue_prev_28d: posSummary.prev28, last7_days: posSummary.week } : null,
+    recent_spoilage: spoilageLogs.slice(-10)
+  });
+}
+
+const aiEsc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const aiFmt = t => aiEsc(t).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+const aiBot = html => `<p class="font-bold text-blue-800">Wasteless Assistant:</p><p class="text-slate-700">${html}</p>`;
+
+function getLocalCopilotReply(message) {
+  const q = message.toLowerCase();
+  const day = fullMonthForecast[currentMonthWeekIndex].days[selectedDayIndex];
+  const mult = adjustedMultiplier(day);
+  const today = new Date(todayStr() + 'T00:00:00');
+  const ingredients = rawIngredients.map(i => ({
+    ...i,
+    daysLeft: Math.round((new Date(i.expiry + 'T00:00:00') - today) / 864e5)
+  }));
+  const expiring = ingredients.filter(i => i.daysLeft <= 3).sort((a, b) => a.daysLeft - b.daysLeft);
+  const lowStock = ingredients.filter(i => Number(i.inStock) <= Number(i.minStock || 0));
+  const menuSorted = [...menuItems].sort((a, b) => (b.baseSales || 0) - (a.baseSales || 0));
+  const money = n => '฿' + Number(n || 0).toLocaleString('en-US', { maximumFractionDigits: 2 });
+  const bulletList = (items, render, emptyText) => items.length ? items.slice(0, 5).map(x => '- ' + render(x)).join('\n') : emptyText;
+
+  if (/\b(hi|hello|hey|สวัสดี|หวัดดี)\b/.test(q)) {
+    return 'Hello! I’m the Wasteless Assistant demo. You can ask me about stock levels, ingredients expiring soon, ordering, sales forecasts, menu items, or food-waste tips.';
+  }
+  if (/\b(help|what can you do|คำสั่ง|ช่วยอะไรได้)\b/.test(q)) {
+    return 'I can provide quick answers from the current Wasteless demo data:\n- Check low-stock ingredients\n- Find ingredients expiring soon\n- Show the selected day’s sales forecast\n- List popular menu items\n- Give practical food-waste tips\n\nTry asking “What is expiring soon?” or “Show my sales forecast.”';
+  }
+  if (/(expir|expire|expiry|หมดอายุ|ใกล้หมดอายุ|วันหมดอายุ)/.test(q)) {
+    return '**Ingredients expiring within 3 days:**\n' + bulletList(expiring, i => `${i.name}: ${i.daysLeft < 0 ? 'expired ' + Math.abs(i.daysLeft) + ' day(s) ago' : i.daysLeft === 0 ? 'expires today' : 'expires in ' + i.daysLeft + ' day(s)'} (stock: ${i.inStock} ${i.unit})`, 'No ingredients are recorded as expiring within the next 3 days.') + '\n\nCheck the actual condition and storage guidance before using any ingredient.';
+  }
+  if (/(low stock|low-stock|stock level|out of stock|inventory|ingredient|วัตถุดิบ|สต็อก|สินค้าเหลือน้อย)/.test(q)) {
+    return '**Ingredients at or below minimum stock:**\n' + bulletList(lowStock, i => `${i.name}: ${i.inStock} ${i.unit} (minimum: ${i.minStock || 0} ${i.unit})`, 'No ingredients are currently at or below their configured minimum stock.') + '\n\nThis is a simple check against the minimum-stock values in the current demo.';
+  }
+  if (/(order|reorder|purchase|buy|สั่งซื้อ|ต้องสั่ง|สั่งวัตถุดิบ)/.test(q)) {
+    const orderItems = ingredients.map(i => {
+      const target = Math.max(Number(i.minStock || 0), Number(i.inStock || 0) + Math.max(0, Number(i.minStock || 0) - Number(i.inStock || 0)));
+      return { ...i, gap: Math.max(0, target - Number(i.inStock || 0)) };
+    }).filter(i => i.gap > 0);
+    return '**Items to review for replenishment:**\n' + bulletList(orderItems, i => `${i.name}: consider at least ${Math.ceil(i.gap * 10) / 10} ${i.unit} (supplier: ${i.supplier || 'not specified'})`, 'No items are below their configured minimum stock based on this basic check.') + '\n\nConfirm upcoming demand, supplier minimum order quantities, and expiry dates before placing an order.';
+  }
+  if (/(forecast|sales|demand|ขาย|ยอดขาย|พยากรณ์|คาดการณ์)/.test(q)) {
+    const forecastSales = menuItems.reduce((sum, m) => sum + Math.round((m.baseSales || 0) * mult), 0);
+    return `**Sales forecast for ${day.dayName} (${day.dateStr}):**\n- Weather: ${day.weather || 'not specified'}${day.temp != null ? `, ${day.temp}°C` : ''}\n- Event: ${day.event || 'none listed'}\n- Forecast multiplier: ${Number(mult).toFixed(2)}×\n- Estimated total menu-item sales: about ${forecastSales} portions\n\nThis is a forecast estimate from the currently selected day, not a guarantee of actual sales.`;
+  }
+  if (/(menu|popular|best.?sell|top.?sell|เมนู|ขายดี)/.test(q)) {
+    return '**Menu items with the highest estimated daily sales:**\n' + bulletList(menuSorted, m => `${m.name}: about ${Math.round((m.baseSales || 0) * mult)} portions; price ${money(m.price)}`, 'No menu items are available in the current data.') + '\n\nThese estimates use the selected day’s forecast multiplier.';
+  }
+  if (/(margin|profit|cost|กำไร|ต้นทุน)/.test(q)) {
+    const items = [...menuItems].sort((a, b) => ((b.price || 0) - (b.cogs || 0)) - ((a.price || 0) - (a.cogs || 0)));
+    return '**Menu margin overview:**\n' + bulletList(items, m => {
+      const margin = Number(m.price) ? Math.round((Number(m.price) - Number(m.cogs)) / Number(m.price) * 100) : 0;
+      return `${m.name}: price ${money(m.price)}, cost ${money(m.cogs)}, estimated margin ${margin}%`;
+    }, 'No menu items are available in the current data.') + '\n\nMargin is calculated from the listed price and cost, before other operating expenses.';
+  }
+  if (/(waste|spoil|food safety|reduce|ลดขยะ|อาหารเสีย|food waste)/.test(q)) {
+    return '**Practical ways to reduce food waste:**\n- Use first-expiring, first-out (FEFO) rotation.\n- Check expiry dates and storage conditions daily.\n- Prepare smaller batches during low-demand periods.\n- Compare forecast demand with actual sales and adjust prep quantities.\n- Record spoilage consistently to identify recurring causes.\n\nFor ingredient-specific safety decisions, follow local food-safety guidance and the product’s storage instructions.';
+  }
+  if (/(recipe|ingredient.*for|สูตร|ส่วนผสม)/.test(q)) {
+    const matched = Object.keys(recipes).find(name => q.includes(name.toLowerCase()));
+    if (matched) {
+      return `**Recipe ingredients for ${matched}:**\n` + bulletList(recipes[matched] || [], r => `${r.name}: ${r.qty}`, 'No recipe ingredients are listed for this item.');
+    }
+    return 'I can help look up recipe ingredients, but please include the menu item’s exact name in your question. You can also open the recipe details in Wasteless.';
+  }
+  if (/(thank|ขอบคุณ)/.test(q)) return 'You’re welcome! Ask me about stock, expiry dates, ordering, sales forecasts, menu margins, or food-waste reduction.';
+  return `I received your message: “${message}”.\n\nI’m running in **demo mode**, so I don’t use a real AI model. I can answer common Wasteless questions about stock, expiry dates, orders, forecasts, menu items, margins, and food waste. Try asking “What is expiring soon?”`;
+}
+
+async function sendCopilotMsg(preset) {
+  const input = document.getElementById('copilotInput'), chat = document.getElementById('copilotChatArea');
+  const text = (typeof preset === 'string' ? preset : input.value).trim();
+  if (!text) return;
+  const add = (cls, html) => { const d = document.createElement('div'); d.className = cls; d.innerHTML = html; chat.appendChild(d); chat.scrollTop = chat.scrollHeight; return d; };
+  add('bg-[#1479ee] text-white p-3 rounded-2xl shadow-sm max-w-[80%]] ml-auto font-medium'.replace('max-w-[80%]]', 'max-w-[80%]'), aiEsc(text));
+  input.value = '';
+  const botCls = 'bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm max-w-[85%] space-y-2';
+  const wait = add(botCls, aiBot('Thinking...'));
+  try {
+    // Short delay keeps the existing chat interaction feeling responsive without any network/API call.
+    await new Promise(resolve => setTimeout(resolve, 250));
+    const reply = getLocalCopilotReply(text);
+    copilotHistory.push({ user: text, assistant: reply });
+    wait.innerHTML = aiBot(aiFmt(reply));
+  } catch (e) {
+    wait.innerHTML = aiBot('Sorry, I could not prepare a demo response. Please try another question.');
+  }
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function openSignageModal() { document.getElementById('signageModal').classList.remove('hidden'); document.getElementById('signageModal').classList.add('flex'); }
+function closeSignageModal() { document.getElementById('signageModal').classList.add('hidden'); document.getElementById('signageModal').classList.remove('flex'); }
+
+function openAddSupplierModal() { document.getElementById('addSupplierModal').classList.remove('hidden'); document.getElementById('addSupplierModal').classList.add('flex'); }
+function closeAddSupplierModal() { document.getElementById('addSupplierModal').classList.add('hidden'); document.getElementById('addSupplierModal').classList.remove('flex'); }
+
+function saveNewSupplier() {
+  const name = document.getElementById('newSupplierName').value.trim();
+  if (name && !customSuppliers.includes(name)) customSuppliers.push(name);
+  closeAddSupplierModal();
+  renderSupplierTabs();
+  showToast(`Added supplier '${name}'!`);
+}
+
+function copyPOToClipboard() {
+  navigator.clipboard.writeText(document.getElementById('poMessageArea').value);
+  showToast('Copied order message!');
+}
+
+function openLINEModal() { document.getElementById('lineModal').classList.remove('hidden'); document.getElementById('lineModal').classList.add('flex'); }
+function closeLINEModal() { document.getElementById('lineModal').classList.add('hidden'); document.getElementById('lineModal').classList.remove('flex'); }
+
+function showToast(msg) {
+  const container = document.getElementById('toastContainer');
+  const toast = document.createElement('div');
+  toast.className = 'bg-slate-900 text-white text-xs font-semibold px-4 py-3 rounded-2xl shadow-2xl border border-slate-700 flex items-center space-x-2 pointer-events-auto transition-all transform translate-y-2';
+  toast.innerHTML = `<span>${msg}</span>`;
+  container.appendChild(toast);
+  setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }, 2500);
+}
+
+// ===== LANDING PAGE + TODAY'S TO-DO =====
+function demandText(d) {
+  const p = Math.round((d.multiplier - 1) * 100);
+  return p === 0 ? 'Normal demand' : `${p > 0 ? '+' : ''}${p}% vs. normal`;
+}
+function renderTodayTodo() {
+  const el = document.getElementById('todoForecast');
+  const dt = document.getElementById('todoDate');
+  if (!el || !todayPos) return;
+  const d = fullMonthForecast[todayPos.w].days[todayPos.d];
+  dt.textContent = `${d.dayName}, ${d.dateStr}`;
+  const p = Math.round((d.multiplier - 1) * 100);
+  el.textContent = `${WEATHER_LABEL[d.weather]} ${d.temp} · ${d.event} · ${p === 0 ? 'normal sales' : (p > 0 ? '+' : '') + p + '% sales'}`;
+}
+function renderLanding() {
+  const w = todayPos ? todayPos.w : 0;
+  const di = todayPos ? todayPos.d : 0;
+  const days = fullMonthForecast[w].days;
+  const d = days[di];
+  const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+  const icons = { sunny: '☀️', rainy: '🌧️', cloudy: '☁️' };
+  set('pvTag', todayPos ? 'TODAY' : 'FORECAST');
+  set('pvDate', `${d.dayName}, ${d.dateStr}`);
+  set('pvEvent', d.event);
+  set('pvIcon', icons[d.weather] || '☀️');
+  set('pvTemp', d.temp);
+  const p = Math.round((d.multiplier - 1) * 100);
+  set('pvDemand', p === 0 ? 'Normal' : `${p > 0 ? '+' : ''}${p}%`);
+  document.getElementById('pvBars').innerHTML = days.map((x, i) =>
+    `<div class="pv-bar ${i === di ? 'is-today' : ''}"><i style="height:${Math.round(x.multiplier / 1.4 * 100)}%"></i><span>${x.dayName}</span></div>`).join('');
+}
+function syncBranch(v) { const b = document.getElementById('branchSelector'); if (b) b.value = v; }
+function openLanding() {
+  const el = document.getElementById('landing');
+  renderLanding();
+  el.style.display = '';
+  document.body.classList.add('ld-open');
+  el.scrollTop = 0;
+  void el.offsetWidth;
+  el.classList.remove('ld-hide');
+}
+function enterApp(tab) {
+  const el = document.getElementById('landing');
+  el.classList.add('ld-hide');
+  document.body.classList.remove('ld-open');
+  setTimeout(() => { if (el.classList.contains('ld-hide')) el.style.display = 'none'; }, 450);
+  switchTab(tab || 'dashboard');
+  window.scrollTo(0, 0);
+}
+
+// INITIALIZATION
+window.addEventListener('DOMContentLoaded', () => {
+  detectToday();
+  if (todayPos) { currentMonthWeekIndex = todayPos.w; selectedDayIndex = todayPos.d; }
+  syncWeekHeader();
+  renderTodayTodo();
+  renderLanding();
+  document.body.classList.add('ld-open');
+  initCharts();
+  renderDashboard();
+  renderWeatherTimeline();
+  updatePredictions();
+  renderSupplierTabs();
+  renderInventoryTable();
+});
+</script>
+</body>
+</html>
